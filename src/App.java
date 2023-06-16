@@ -13,7 +13,6 @@ public class App {
 
          System.out.println("O resultado é: "+potencia(base, expo));
          insira.close();
-         System.out.println();
     } 
     
     public static double potencia(double base, double expoente){
@@ -54,7 +53,6 @@ public class App {
         }
         return resultado1;
        
-        //fodaaa
    
     }
 }  
