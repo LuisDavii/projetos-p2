@@ -2,57 +2,73 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args){
-
          Scanner insira = new Scanner(System.in);
 
-         System.out.println("Calculadora de potencia \nInsira a base da sua potencia: ");
-         double base = insira.nextInt();
-         
-         System.out.println("Insira o expoente: ");
-         double expo = insira.nextInt();
+         //introdução
 
-         System.out.println("O resultado é: "+potencia(base, expo));
-         insira.close();
-    } 
+         digitacao("- Riqueza ",50);
+         System.out.println("\n");
+
+         digitacao("- Fama",50);
+         System.out.println("\n");
+
+         digitacao("- Poder",50);
+         System.out.println("\n");
+
+         digitacao("- O homem que conseguiu tudo neste mundo, o Rei dos Piratas, Gold Roger.\n", 50);
+         digitacao("Suas últimas palavras antes de ser executado, foram enviadas para todos no mar.\n",50);
+         digitacao("- Gold roger  'Minhas riquezas e tesouros? Se vocês quiserem, eu os deixo pegar.'\n",50);
+         digitacao("e assim se iniciou a grande era dos piratas",50);
     
-    public static double potencia(double base, double expoente){
-        
-        Boolean expoNeg = false;
-        Boolean negativo = false;
 
-        if(base<0){
-            negativo = true;
-            base = base*-1;
-        }
 
-        if(expoente<0){
-            expoNeg = true;
-            expoente = -1*expoente; 
-        }
-        
-        double resultado = 1;
-        
-        for(int i = 0 ; i < expoente ; i++){
-            resultado = multiplica(resultado,base);
-        }
-        if(negativo && !(expoente % 2 == 0)){
-            resultado = resultado*-1;
-        }
-        if(expoNeg){
-            resultado = 1/resultado;
-        }
 
-        return resultado;
     }
-    public static double multiplica(double base, double vezes){
 
-        double resultado1 = 0;
-        
-        for(int i = 0 ; i < vezes ; i++){
-            resultado1 += base;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //funções utilizadas
+ 
+    public static void digitacao(String texto, int velocidade) {
+        // "texto.length" pra saber o tamanho da string e percorrê la, e imprimir letra por letra
+        for (int i = 0; i < texto.length(); i++) {
+
+        // "texto.charAt" pra pegar determinada caractere do texto e logo em seguida imprimir
+            System.out.print(texto.charAt(i));
+            //"try" e "catch" pra tratamento de exeções
+            try {
+                //Thread.sleep() pra fazer o programa esperar determinado tempo
+                Thread.sleep(velocidade);
+            }   
+            catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        return resultado1;
-       
-   
     }
-}  
+}
+
+
+    
