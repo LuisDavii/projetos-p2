@@ -20,11 +20,11 @@ public class App {
 
         digitacao("  Um homem conquistou tudo que o mundo tinha a oferecer, o Rei dos Piratas, Gold Roger." +
                 "\nAntes de ser executado, suas últimas palavras levaram multidões aos mares: ", 30);
-        System.out.println("");
+        System.out.println("\n");
        
         digitacao("- Gold roger ''Querem o meu tesouro? Fiquem a vontade para pegá-lo, procurem, nele está tudo que este mundo pode dar a vocês!''",
                 40);
-        System.out.println("");
+        System.out.println("\n");
 
         digitacao("E assim se iniciou a grande era dos piratas.", 30);
 
@@ -32,38 +32,37 @@ public class App {
         System.out.println("\n");
         digitacao("Olá Aventureiro(a), como posso te chamar ? ", 60);
         String nome = insira.nextLine();
+        String NOME = nome.toUpperCase();
 
         // Capitulo I
         System.out.println("");
-        digitacao("Capitulo I | A Escolha do Destino\n", 70);
+        digitacao("Capitulo I | A Duvida Incessante\n", 70);
         System.out.println("");
 
-        digitacao("No Nort Blue, um(a) jovem chamado(a) " + nome + " se vê em um dilema." +
-                "\nCriado(a) em uma vila pacífica, ele(a) sonha em se tornar um marinheiro(a) para proteger os outros. "
-                +
-                "\nMas a atração pelo desconhecido e a promessa de liberdade o(a) tentam a se juntar a um bando pirata.\n"
-                +
-                "Entre a responsabilidade e a aventura, " + nome + " precisa escolher seu caminho!!", 30);
+        digitacao("Em um pequeno vilarejo no North Blue, vivia um(a) jovem chamado(a) " + nome + ".\n"+
+                "Fascinado(a) pelas histórias de piratas, ele(a) sonhava em se juntar a uma\n"+
+                "tripulação audaciosa e explorar os mares. Entretanto após diversas tentativas\n"+ 
+                "e repetidos fracassos, "+nome+" começa a questionar seu sonho de se tornar um pirata\n"+
+                "Ele(a) é atormentado por uma série de eventos desanimadores que minam sua\n"+
+                "confiança e abalam sua determinação",30);
 
         // primeira escolha
         System.out.println("\n" + "\n");
 
-        digitacao("| Pirata | Em busca de tesouros e liberdade, embarque em aventuras\n" +
+        digitacao("| Tentar | Em busca de tesouros e liberdade, embarque em aventuras\n" +
                 "perigosas pelos mares desconhecidos, desafiando a ordem estabelecida e\n" +
                 "enfrentando rivais implacáveis. O destino do One Piece aguarda por você!!", 15);
-
         System.out.println("\n" + "\n");
 
-        digitacao("| Marinheiro | Defenda a justiça e a paz nos mares como um membro da Marinha.\n" +
-                "Enfrente piratas perigosos, proteja os inocentes e lute contra a corrupção,\n" +
-                "garantindo um mundo seguro para todos. Sua missão é a ordem e a proteção!!", 15);
-
+        digitacao("| Desistir | O sol poente lança uma sombra melancólica sobre a pequena\n"+
+                "vila onde vive "+nome+".", 15);
         System.out.println("\n");
 
-        digitacao("Escolha Seu Lado!!\n", 40);
+        digitacao("Faça sua Escolha \n", 40);
+        System.out.println("\n");
 
         boolean opção1 = true;
-        repeticao("pirata", "marinheiro",opção1);
+        repeticao("tentar", "desistir",opção1);
         
 
         // Caso Pirata
@@ -88,28 +87,102 @@ public class App {
 
             // Rumbar
             if(bando1){
+                System.out.println("\n");
                 digitacao("Como um pirata novato, você se junta a uma pequena tripulação dos\n"+
             "Piratas Rumbar, liderada pelo audacioso Capitão Yorki. Sob a orientação\n"+
             "do Capitão Yorki, você aprende os segredos da vida pirata, desde a arte da\n"+
             "navegação até as habilidades de combate", 30);
             System.out.println("\n");
 
-            digitacao("", 0);
-            }
+            digitacao("Após dois anos navegando com a tripulação dos Piratas Rumbar, "+nome+
+            "\nconquistou a confiança de seu capitão.\n"+
+            "Seu comprometimento, habilidades e lealdade ao bando eram incontestáveis.\n"+
+            " \nCerto dia enquanto navegavam pela gran line em busca do one piece, os\n"+
+            "Piratas Rumbar se depararam com uma visão aterrorizante: a tripulação do\n"+
+            "temido Barba Negra se aproximava. Eles haviam cruzado o caminho com um\n"+
+            "dos piratas mais perigosos e cruéis dos mares. Durante uma reunião no\n"+
+            "navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta", 30);
+            System.out.println("\n");
+        
+            digitacao("- Cap. Yorki ''"+NOME+"!! Chegou a hora de tomarmos uma decisão séria.\n"+
+            "Diante dessa tempestade , devemos lutar ou fugir e perecer como meros marujos?''", 30);
+            System.out.println("\n");
+            
+            digitacao("- Cap. Yorki ''Decida "+NOME+", qual vai ser?'' ", 30);
+            System.out.println("\n");
 
+
+            digitacao("| Lutar | ", 70);
+            System.out.println("\n");
+
+            digitacao("| Fugir | ", 70);
+            System.out.println("\n");
+
+
+            boolean lutar = true;
+            repeticao("lutar", "fugir", lutar);
+            
+            //Capitulo III | Lutar
+                if(lutar){
+                    System.out.println("\n");
+                    digitacao("Capitulo III | Turbulência dos Mares: A Jornada de "+NOME, 70);
+                    System.out.println("\n");
+                    
+                    digitacao("- "+nome+" ''Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n"+
+                            "Se a luta é necessária para proteger nossa tripulação e nossos objetivos,\n"+
+                            "então devemos enfrentá-la sem hesitação. Não fugiremos do combate\n"+
+                            "quando a honra e nossa liberdade estiverem em jogo!!''", 30);
+                    System.out.println("\n");
+
+                    digitacao("Chegou o dia em que o destino da tripulação tomou um rumo trágico.\n"+
+                            nome+", estava pronto para provar seu valor no campo de batalha.\n"+
+                            "Ao lado do capitão Yorki e dos companheiros de tripulação, ele erguia\n"+
+                            "sua espada, ciente dos desafios que estavam por vir.\n"+
+                            "\nNessa batalha, o navio foi destruído e muitos membros da tripulação\n"+
+                            "perderam a vida. "+nome+", junto com Yorki e alguns outros sobreviventes,\n"+
+                            "lutaram com todas as suas forças. O inimigo era implacável, e o número\n"+
+                            "de oponentes era avassalador. Mesmo com cada fibra de seu ser gritando\n"+
+                            "por vingança, "+nome+" percebeu que a morte de seu bando era inevitável.\n"+
+                            "\nCom pesar, "+nome+ " olhou para os olhos de seus companheiros feridos, e a\n"+
+                            "tristeza invadiu seu coração.\n"+
+                            "- "+nome+" ''Precisamos fugir! Não há mais esperança aqui.''\n"+
+                            "\nJuntos, eles correram para o navio destruído, desesperados por escapa\n"+
+                            "daquela carnificina. Mas enquanto lutavam para abrir caminho entre os\n"+
+                            "inimigos, um por um, os companheiros de "+NOME+" caíram. Seus gritos de dor\n"+
+                            "e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.\n", 30);
+                    System.out.println("\n");
+
+                    digitacao("Finalmente, restava apenas "+nome+". Sua mente estava turva com a dor e a\n"+
+                            "perda, mas ele sabia que tinha que sobreviver. Cada celula de seu corpo\n"+
+                            "clamava por vingança, mas ele se obrigou a seguir em frente, lutando com\n"+
+                            "as últimas gotas de energia que lhe restavam.\n"+
+                            "\nCom lágrimas em seus olhos, nome conseguiu escapar daquele pesadelo.\n"+
+                            "Sozinho, ele passou o resto da sua vida infima vagando pelos mares,\n"+
+                            "consumido pela culpa e pela tristeza por ter sido o único a sobreviver.\n", 45);
+                    System.out.println("\n");
+
+                    digitacao("|  F I M  |", 70);
+                }
+                //não lutar
+                else{
+
+                }
+            
+            }
             // Bellamy
             else{
                 digitacao("", 30);
             }
 
             
+            
         }
-
-        // Caso Marinheiro
+        // Caso Desista
         else{
             
         }
-    }
+        
+    }   
 
 
 
