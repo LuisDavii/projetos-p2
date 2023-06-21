@@ -19,14 +19,14 @@ public class App {
         System.out.println("\n");
 
         digitacao("  Um homem conquistou tudo que o mundo tinha a oferecer, o Rei dos Piratas, Gold Roger." +
-                "\nAntes de ser executado, suas últimas palavras levaram multidões aos mares: ", 30);
+                "\nAntes de ser executado, suas últimas palavras levaram multidões aos mares: ", 20);
         System.out.println("\n");
        
         digitacao("- Gold roger ''Querem o meu tesouro? Fiquem a vontade para pegá-lo, procurem, nele está tudo que este mundo pode dar a vocês!''",
                 40);
         System.out.println("\n");
 
-        digitacao("E assim se iniciou a grande era dos piratas.", 30);
+        digitacao("E assim se iniciou a grande era dos piratas.", 20);
 
         // Nome
         System.out.println("\n");
@@ -44,7 +44,7 @@ public class App {
                 "tripulação audaciosa e explorar os mares. Entretanto após diversas tentativas\n"+ 
                 "e repetidos fracassos, "+nome+" começa a questionar seu sonho de se tornar um pirata\n"+
                 "Ele(a) é atormentado por uma série de eventos desanimadores que minam sua\n"+
-                "confiança e abalam sua determinação",30);
+                "confiança e abalam sua determinação",25);
 
         // primeira escolha
         System.out.println("\n" + "\n");
@@ -59,39 +59,32 @@ public class App {
         System.out.println("\n");
 
         digitacao("Faça sua Escolha \n", 40);
-        System.out.println("\n");
-
-        boolean opção1 = true;
-        repeticao("tentar", "desistir",opção1);
-        
 
         // Caso Pirata
-        if(opção1){
+        if(repeticao("tentar", "desistir")){
             // Capitulo II | Lado Pirata 
             System.out.println("");
             digitacao("Capitulo II | A Jornada Começa !!", 70);
             System.out.println("\n");
 
             digitacao("Determinado(a),"+nome+" busca uma tripulação que aceite aprendizes em sua\n"+
-            "jornada. Ele(a) se depara com Dois navios ancorados no porto:\nOs Piratas Rumbar ou Os Piratas Bellamy.", 30);
+            "jornada. Ele(a) se depara com Dois navios ancorados no porto:\nOs Piratas Rumbar ou Os Piratas Bellamy.", 20);
             System.out.println("\n");
 
-            digitacao("| Rumbar | uma bando desconhecido cujo ninguém nunca ouviu falar",30);
+            digitacao("| Rumbar | uma bando desconhecido cujo ninguém nunca ouviu falar",20);
             System.out.println("\n");
 
-            digitacao("| Bellamy | Piratas infames cujo seus feitos ecoam pelos 4 mares", 30);
+            digitacao("| Bellamy | Piratas infames cujo seus feitos ecoam pelos 4 mares", 20);
             System.out.println("\n");
 
-            boolean bando1 = true;
-            repeticao("rumbar", "bellamy",bando1);
 
             // Rumbar
-            if(bando1){
+            if(repeticao("rumbar", "bellamy")){
                 System.out.println("\n");
                 digitacao("Como um pirata novato, você se junta a uma pequena tripulação dos\n"+
             "Piratas Rumbar, liderada pelo audacioso Capitão Yorki. Sob a orientação\n"+
             "do Capitão Yorki, você aprende os segredos da vida pirata, desde a arte da\n"+
-            "navegação até as habilidades de combate", 30);
+            "navegação até as habilidades de combate", 20);
             System.out.println("\n");
 
             digitacao("Após dois anos navegando com a tripulação dos Piratas Rumbar, "+nome+
@@ -101,14 +94,14 @@ public class App {
             "Piratas Rumbar se depararam com uma visão aterrorizante: a tripulação do\n"+
             "temido Barba Negra se aproximava. Eles haviam cruzado o caminho com um\n"+
             "dos piratas mais perigosos e cruéis dos mares. Durante uma reunião no\n"+
-            "navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta", 30);
+            "navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta", 20);
             System.out.println("\n");
         
             digitacao("- Cap. Yorki ''"+NOME+"!! Chegou a hora de tomarmos uma decisão séria.\n"+
-            "Diante dessa tempestade , devemos lutar ou fugir e perecer como meros marujos?''", 30);
+            "Diante dessa tempestade , devemos lutar ou fugir e perecer como meros marujos?''", 20);
             System.out.println("\n");
             
-            digitacao("- Cap. Yorki ''Decida "+NOME+", qual vai ser?'' ", 30);
+            digitacao("- Cap. Yorki ''Decida "+NOME+", qual vai ser?'' ", 20);
             System.out.println("\n");
 
 
@@ -118,12 +111,9 @@ public class App {
             digitacao("| Fugir | ", 70);
             System.out.println("\n");
 
-
-            boolean lutar = true;
-            repeticao("lutar", "fugir", lutar);
             
             //Capitulo III | Lutar
-                if(lutar){
+                if(repeticao("lutar", "fugir")){
                     System.out.println("\n");
                     digitacao("Capitulo III | Turbulência dos Mares: A Jornada de "+NOME, 70);
                     System.out.println("\n");
@@ -131,7 +121,7 @@ public class App {
                     digitacao("- "+nome+" ''Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n"+
                             "Se a luta é necessária para proteger nossa tripulação e nossos objetivos,\n"+
                             "então devemos enfrentá-la sem hesitação. Não fugiremos do combate\n"+
-                            "quando a honra e nossa liberdade estiverem em jogo!!''", 30);
+                            "quando a honra e nossa liberdade estiverem em jogo!!''", 20);
                     System.out.println("\n");
 
                     digitacao("Chegou o dia em que o destino da tripulação tomou um rumo trágico.\n"+
@@ -149,7 +139,7 @@ public class App {
                             "\nJuntos, eles correram para o navio destruído, desesperados por escapa\n"+
                             "daquela carnificina. Mas enquanto lutavam para abrir caminho entre os\n"+
                             "inimigos, um por um, os companheiros de "+NOME+" caíram. Seus gritos de dor\n"+
-                            "e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.\n", 30);
+                            "e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.\n", 20);
                     System.out.println("\n");
 
                     digitacao("Finalmente, restava apenas "+nome+". Sua mente estava turva com a dor e a\n"+
@@ -163,15 +153,58 @@ public class App {
 
                     digitacao("|  F I M  |", 70);
                 }
-                //não lutar
+                //fugir
                 else{
+                    System.out.println("\n");
+                    digitacao(""+nome+" pensou profundamente, considerando as consequências de enfrentar\n"+
+                            "Barba Negra, um dos piratas mais infames e temidos dos mares.\n"+
+                            "\n- "+nome+" ''Capitão, se lutarmos agora, seremos superados em números e completamente\n"+
+                            "aniquilados. Vamos recuar, ganhar tempo e fortalecer nossa tripulação.\n"+
+                            "nos preparar para enfrentar esse desgraçado e quando estivermos prontos\n"+
+                            "ninguém ousará desafiar os Piratas Rumbar novamente!!!", 20);
 
+                    System.out.println("\n");
+                    digitacao("Capitulo III | Hachinosu Sangue e Tesouros", 70);
+                    System.out.println("\n");
+
+                    digitacao("Após meses de preparação, os Piratas Rumbar finalmente chegaram à última\n"+
+                            "ilha da Grand Line. Era um lugar misterioso e perigoso, conhecido como\n"+
+                            "''Hachinosu'', Eles estavam determinados a conquistar a fama e a fortuna que\n"+
+                            "os aguardavam, mas sabiam que não estavam sozinhos.\n"+
+                            "\nnavegavando pela costa de Hachinosu, uma densa névoa começou a envolver seus\n"+
+                            "navios, reduzindo a visibilidade e criando um ar de suspense. De repente, os\n"+
+                            "sons de canhões ecoaram pela neblina, seguidos por explosões.\n"+
+                            "A névoa se dissipou rapidamente, revelando os imponentes navios da tripulação do Barba Negra.\n"+
+                            "\nOs Piratas Rumbar revidaram, disparando seus próprios canhões em resposta ao\n"+
+                            "ataque. Enquanto os Piratas Rumbar resistiam bravamente, Yorki tomou uma\n"+
+                            "decisão audaciosa. Ele ordenou que a sua frota se aproximassem do inimigo,\n"+
+                            "buscando um confronto corpo a corpo. A batalha se intensificou à medida que os navios colidiam\n"+
+                            "\nNo auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Barba Negra.\n"+
+                            "A lâmina afiada Barba Negra atravessou de o corpo de Yorki, cortando seus sonhos e\n"+
+                            "esperanças em um instante cruel. Ele caiu de joelhos.\n"+
+                            "\nEnquanto "+nome+" presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de\n"+
+                            "seu ser. Com um grito, ele se lançou contra Barba Negra, jurando vingança pelo seu capitão.\n"+
+                            "\nGolpes brutais eram desferidos. O sangue escorria dos ferimentos, Com a habilidade\n"+
+                            "aprimorada pela chama da vingança, "+nome+" conseguiu encontrar uma brecha na defesa de\n"+
+                            "Barba Negra. Com um golpe poderoso finalmente derrotou o infame capitão.\n"+
+                            "\nAo ver seu líder derrotado, os seguidores de Barba Negra recuaram, deixando "+nome+"\n"+
+                            "exausto, mas triunfante. Ele caiu de joelhos, olhando para o céu enquanto a chuva\n"+
+                            "lavava seu rosto coberto de sangue.\n"+
+                            "\nCom o coração pesado pela perda de Yorki, "+nome+" jurou honrar a memória de seu capitão\n"+
+                            "e conduzir os Piratas Rumbar à grandiosidade. O legado de Yorki viveria através dele\n"+
+                            "e de sua determinação.\n"+
+                            "\nEnquanto a chuva caía sobre a costa da última ilha, "+nome+" se levantou, olhando para o\n"+
+                            "horizonte com um olhar de determinação. Ele sabia que ainda havia um tesouro a ser \n"+
+                            "conquistado, e os Piratas Rumbar continuariam sua jornada, agora com "+nome+" como seu novo capitão.\n", 20);
+                    System.out.println("\n");
+
+                    digitacao("|  F I M  |", 70);
                 }
             
             }
             // Bellamy
             else{
-                digitacao("", 30);
+                digitacao("", 20);
             }
 
             
@@ -179,7 +212,12 @@ public class App {
         }
         // Caso Desista
         else{
-            
+            System.out.println("");
+            digitacao("Capitulo II | O Adeus ao Mar", 70);
+            System.out.println("\n");
+           
+            digitacao("", 20
+            );
         }
         
     }   
@@ -237,27 +275,29 @@ public class App {
     }
 
     //função p/caso o usuario digite errado
-    public static boolean repeticao(String opção1,String opção2,boolean caminho1){
+    public static boolean repeticao(String opção1,String opção2){
         Scanner insira1 = new Scanner(System.in);
         
         boolean continua = true;
+        boolean umououtro = true;
 
         while (continua){
             String escolha = insira1.nextLine();
 
             if (escolha.equalsIgnoreCase(opção1)) {
                 continua = false;
+                
             }
             else if (escolha.equalsIgnoreCase(opção2)) {
                 continua = false;
-                caminho1 = false;
+                umououtro = false;
             }
             else {
                 digitacao("Você não digitou uma opção válida, tente novamente!!\n", 40);
                 System.out.println("");
             }
         }
-        return caminho1;
+    return umououtro;   
     }
 }
 
