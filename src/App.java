@@ -68,7 +68,8 @@ public class App {
             System.out.println("\n");
 
             digitacao("Determinado(a),"+nome+" busca uma tripulação que aceite aprendizes em sua\n"+
-            "jornada. Ele(a) se depara com Dois navios ancorados no porto:\nOs Piratas Rumbar ou Os Piratas Bellamy.", 20);
+            "jornada. Ele(a) se depara com Dois navios ancorados no porto:\nUm navio dos Piratas Rumbar"+
+            " e outro da tripulação dos Piratas Bellamy.", 20);
             System.out.println("\n");
 
             digitacao("| Rumbar | uma bando desconhecido cujo ninguém nunca ouviu falar",20);
@@ -92,7 +93,7 @@ public class App {
             "Seu comprometimento, habilidades e lealdade ao bando eram incontestáveis.\n"+
             " \nCerto dia enquanto navegavam pela gran line em busca do one piece, os\n"+
             "Piratas Rumbar se depararam com uma visão aterrorizante: a tripulação do\n"+
-            "temido Barba Negra se aproximava. Eles haviam cruzado o caminho com um\n"+
+            "temido Vegapunk se aproximava. Eles haviam cruzado o caminho com um\n"+
             "dos piratas mais perigosos e cruéis dos mares. Durante uma reunião no\n"+
             "navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta", 20);
             System.out.println("\n");
@@ -157,7 +158,7 @@ public class App {
                 else{
                     System.out.println("\n");
                     digitacao(""+nome+" pensou profundamente, considerando as consequências de enfrentar\n"+
-                            "Barba Negra, um dos piratas mais infames e temidos dos mares.\n"+
+                            "Vegapunk, um dos piratas mais infames e temidos dos mares.\n"+
                             "\n- "+nome+" ''Capitão, se lutarmos agora, seremos superados em números e completamente\n"+
                             "aniquilados. Vamos recuar, ganhar tempo e fortalecer nossa tripulação.\n"+
                             "nos preparar para enfrentar esse desgraçado e quando estivermos prontos\n"+
@@ -174,20 +175,20 @@ public class App {
                             "\nnavegavando pela costa de Hachinosu, uma densa névoa começou a envolver seus\n"+
                             "navios, reduzindo a visibilidade e criando um ar de suspense. De repente, os\n"+
                             "sons de canhões ecoaram pela neblina, seguidos por explosões.\n"+
-                            "A névoa se dissipou rapidamente, revelando os imponentes navios da tripulação do Barba Negra.\n"+
+                            "A névoa se dissipou rapidamente, revelando os imponentes navios da tripulação do Vegapunk.\n"+
                             "\nOs Piratas Rumbar revidaram, disparando seus próprios canhões em resposta ao\n"+
                             "ataque. Enquanto os Piratas Rumbar resistiam bravamente, Yorki tomou uma\n"+
                             "decisão audaciosa. Ele ordenou que a sua frota se aproximassem do inimigo,\n"+
                             "buscando um confronto corpo a corpo. A batalha se intensificou à medida que os navios colidiam\n"+
-                            "\nNo auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Barba Negra.\n"+
-                            "A lâmina afiada Barba Negra atravessou de o corpo de Yorki, cortando seus sonhos e\n"+
+                            "\nNo auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Vegapunk.\n"+
+                            "A lâmina afiada Vegapunk atravessou de o corpo de Yorki, cortando seus sonhos e\n"+
                             "esperanças em um instante cruel. Ele caiu de joelhos.\n"+
                             "\nEnquanto "+nome+" presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de\n"+
-                            "seu ser. Com um grito, ele se lançou contra Barba Negra, jurando vingança pelo seu capitão.\n"+
+                            "seu ser. Com um grito, ele se lançou contra Vegapunk, jurando vingança pelo seu capitão.\n"+
                             "\nGolpes brutais eram desferidos. O sangue escorria dos ferimentos, Com a habilidade\n"+
                             "aprimorada pela chama da vingança, "+nome+" conseguiu encontrar uma brecha na defesa de\n"+
-                            "Barba Negra. Com um golpe poderoso finalmente derrotou o infame capitão.\n"+
-                            "\nAo ver seu líder derrotado, os seguidores de Barba Negra recuaram, deixando "+nome+"\n"+
+                            "Vegapunk. Com um golpe poderoso finalmente derrotou o infame capitão.\n"+
+                            "\nAo ver seu líder derrotado, os seguidores de Vegapunk recuaram, deixando "+nome+"\n"+
                             "exausto, mas triunfante. Ele caiu de joelhos, olhando para o céu enquanto a chuva\n"+
                             "lavava seu rosto coberto de sangue.\n"+
                             "\nCom o coração pesado pela perda de Yorki, "+nome+" jurou honrar a memória de seu capitão\n"+
@@ -204,7 +205,31 @@ public class App {
             }
             // Bellamy
             else{
-                digitacao("", 20);
+                digitacao("Atraído pela promessa de poder e fama que o Capitão Bellamy representava, hiro se\n"+
+                        "juntou à tripulação\n"+
+                        "\nEnquanto navegavam pelos mares, hiro percebeu que Bellamy tinha uma visão distorcida\n"+
+                        "de sucesso, desprezava a ideia de sonhos e ambições, acreditando que o mundo era um \n"+
+                        "lugar cruel e que apenas os mais fortes mereciam sucesso.\n"+
+                        "\nCerto dia marco e seus companheiros chegaram à ilha Jaya, cruzaram seu caminho com\n"+
+                        "Luffy o capitão dos Chapéus de Palha. Bellamy, cheio de arrogância, zombou de Luffy\n"+
+                        "e seus sonhos de encontrar o One Piece, desencadeando uma intensa desavença entre os\n"+
+                        "dois capitães.\n"+
+                        "\nHiro, dividido entre lealdade e seus próprios princípios, testemunhou a luta entre Luffy e Bellamy."+
+                        "\nLuffy, com sua força e habilidades de fruta do diabo, derrotou Bellamy, provando que\n"+
+                        "sonhos e ambições podem ser poderosas podem impulsionar. A derrota de Bellamy abalou \n"+
+                        "profundamente Hiro, que se viu questionando se o caminho pirata era realmente o que\n"+
+                        "ele desejava seguir\n"+
+                        "\nApós o confronto, Luffy se aproximou de Hiro com um sorriso sincero. Ele reconheceu\n"+
+                        "o potencial e a determinação de Hiro e ofereceu a ele a oportunidade de se juntar à\n"+
+                        "tripulação dos Chapéus de Palha.hiro sabia que a vida de pirata trazia aventuras\n"+
+                        "emocionantes e liberdade, mas também podia ser marcada pela violência e caos.\n"+
+                        "\nRevoltado com a visão deturpada de sucesso e a crueldade demonstrada por piratas\n"+
+                        "como Bellamy, Hiro tomou uma decisão firme e jurou ingressar na Marinha para\n"+
+                        "combatê-los. Ele se comprometeu a lutar pela justiça, proteger os inocentes e\n"+
+                        "garantir que os mares fossem um lugar seguro para todos.\n", 20);
+                System.out.println("\n");
+
+                digitacao("|  F I M  |", 70);
             }
 
             
@@ -216,8 +241,24 @@ public class App {
             digitacao("Capitulo II | O Adeus ao Mar", 70);
             System.out.println("\n");
            
-            digitacao("", 20
-            );
+            digitacao("Luffy reúne sua coragem e parte em busca do seu sonho. Ele se junta a uma tripulação\n"+
+            "e juntos, eles embarcam em um pequeno navio rumo ao desconhecido.\n"+
+            "\nContudo, a vida marítima não é tão romântica como Luffy imaginava. Enfrentando\n"+
+            "tempestades violentas e encontros com piratas cruéis, a tripulação de Luffy\n"+
+            "experimenta o lado mais sombrio dos mares\n"+
+            "\nDurante uma batalha contra um poderoso pirata, Luffy testemunha a perda trágica de\n"+
+            "um membro querido de sua família, que havia embarcado em sua própria jornada como\n"+
+            "pirata. A dor da perda é avassaladora, deixando Luffy profundamente abalado.\n"+
+            "\nAlém disso, Luffy é capturado e aprisionado pela marinha que caça piratas\n"+
+            "impiedosamente. Durante seu tempo na prisão, ele testemunha a crueldade e a\n"+
+            "brutalidade com que os piratas são tratados, fazendo-o questionar se o caminho\n"+
+            "pirata é realmente digno de seguir.\n"+
+            "\nEssas experiências traumáticas, combinadas com as incertezas e os desafios\n"+
+            "constantes que um pirata enfrenta, levam Luffy a acreditar que desistir de seu sonho\n"+
+            "é a melhor maneira de proteger aqueles que ama e evitar um destino trágico.\n", 20);
+            System.out.println("\n");
+
+            digitacao("|  F I M  |", 70);
         }
         
     }   
