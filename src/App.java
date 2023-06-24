@@ -263,40 +263,6 @@ public class App {
         
     }   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
- 
     //função p/efeito de digitação
     public static void digitacao(String texto, int velocidade) {
         // "texto.length" pra saber o tamanho da string e percorrê la, e imprimir letra por letra
