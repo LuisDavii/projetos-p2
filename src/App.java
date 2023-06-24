@@ -31,18 +31,18 @@ public class App {
         // Nome
         System.out.println("\n");
         digitacao("Olá Aventureiro(a), como posso te chamar ? ", 60);
-        String nome = insira.nextLine();
-        String NOME = nome.toUpperCase();
+        
+        personagem principal = new personagem(insira.nextLine());
 
         // Capitulo I
         System.out.println("");
         digitacao("Capitulo I | A Duvida Incessante\n", 70);
         System.out.println("");
 
-        digitacao("Em um pequeno vilarejo no North Blue, vivia um(a) jovem chamado(a) " + nome + ".\n"+
+        digitacao("Em um pequeno vilarejo no North Blue, vivia um(a) jovem chamado(a) " + principal.Nome() + ".\n"+
                 "Fascinado(a) pelas histórias de piratas, ele(a) sonhava em se juntar a uma\n"+
                 "tripulação audaciosa e explorar os mares. Entretanto após diversas tentativas\n"+ 
-                "e repetidos fracassos, "+nome+" começa a questionar seu sonho de se tornar um pirata\n"+
+                "e repetidos fracassos, "+principal.Nome()+" começa a questionar seu sonho de se tornar um pirata\n"+
                 "Ele(a) é atormentado por uma série de eventos desanimadores que minam sua\n"+
                 "confiança e abalam sua determinação",25);
 
@@ -55,7 +55,7 @@ public class App {
         System.out.println("\n" + "\n");
 
         digitacao("| Desistir | O sol poente lança uma sombra melancólica sobre a pequena\n"+
-                "vila onde vive "+nome+".", 15);
+                "vila onde vive "+principal.Nome()+".", 15);
         System.out.println("\n");
 
         digitacao("Faça sua Escolha \n", 40);
@@ -67,7 +67,7 @@ public class App {
             digitacao("Capitulo II | A Jornada Começa !!", 70);
             System.out.println("\n");
 
-            digitacao("Determinado(a),"+nome+" busca uma tripulação que aceite aprendizes em sua\n"+
+            digitacao("Determinado(a),"+principal.Nome()+" busca uma tripulação que aceite aprendizes em sua\n"+
             "jornada. Ele(a) se depara com Dois navios ancorados no porto:\nUm navio dos Piratas Rumbar"+
             " e outro da tripulação dos Piratas Bellamy.", 20);
             System.out.println("\n");
@@ -88,7 +88,7 @@ public class App {
             "navegação até as habilidades de combate", 20);
             System.out.println("\n");
 
-            digitacao("Após dois anos navegando com a tripulação dos Piratas Rumbar, "+nome+
+            digitacao("Após dois anos navegando com a tripulação dos Piratas Rumbar, "+principal.Nome()+
             "\nconquistou a confiança de seu capitão.\n"+
             "Seu comprometimento, habilidades e lealdade ao bando eram incontestáveis.\n"+
             " \nCerto dia enquanto navegavam pela gran line em busca do one piece, os\n"+
@@ -98,11 +98,11 @@ public class App {
             "navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta", 20);
             System.out.println("\n");
         
-            digitacao("- Cap. Yorki ''"+NOME+"!! Chegou a hora de tomarmos uma decisão séria.\n"+
+            digitacao("- Cap. Yorki ''"+(principal.Nome()).toUpperCase()+"!! Chegou a hora de tomarmos uma decisão séria.\n"+
             "Diante dessa tempestade , devemos lutar ou fugir e perecer como meros marujos?''", 20);
             System.out.println("\n");
             
-            digitacao("- Cap. Yorki ''Decida "+NOME+", qual vai ser?'' ", 20);
+            digitacao("- Cap. Yorki ''Decida "+(principal.Nome()).toLowerCase()+", qual vai ser?'' ", 20);
             System.out.println("\n");
 
 
@@ -116,38 +116,38 @@ public class App {
             //Capitulo III | Lutar
                 if(repeticao("lutar", "fugir")){
                     System.out.println("\n");
-                    digitacao("Capitulo III | Turbulência dos Mares: A Jornada de "+NOME, 70);
+                    digitacao("Capitulo III | Turbulência dos Mares: A Jornada de "+principal.Nome(), 70);
                     System.out.println("\n");
                     
-                    digitacao("- "+nome+" ''Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n"+
+                    digitacao("- "+principal.Nome()+" ''Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n"+
                             "Se a luta é necessária para proteger nossa tripulação e nossos objetivos,\n"+
                             "então devemos enfrentá-la sem hesitação. Não fugiremos do combate\n"+
                             "quando a honra e nossa liberdade estiverem em jogo!!''", 20);
                     System.out.println("\n");
 
                     digitacao("Chegou o dia em que o destino da tripulação tomou um rumo trágico.\n"+
-                            nome+", estava pronto para provar seu valor no campo de batalha.\n"+
+                            principal.Nome()+", estava pronto para provar seu valor no campo de batalha.\n"+
                             "Ao lado do capitão Yorki e dos companheiros de tripulação, ele erguia\n"+
                             "sua espada, ciente dos desafios que estavam por vir.\n"+
                             "\nNessa batalha, o navio foi destruído e muitos membros da tripulação\n"+
-                            "perderam a vida. "+nome+", junto com Yorki e alguns outros sobreviventes,\n"+
+                            "perderam a vida. "+principal.Nome()+", junto com Yorki e alguns outros sobreviventes,\n"+
                             "lutaram com todas as suas forças. O inimigo era implacável, e o número\n"+
                             "de oponentes era avassalador. Mesmo com cada fibra de seu ser gritando\n"+
-                            "por vingança, "+nome+" percebeu que a morte de seu bando era inevitável.\n"+
-                            "\nCom pesar, "+nome+ " olhou para os olhos de seus companheiros feridos, e a\n"+
+                            "por vingança, "+principal.Nome()+" percebeu que a morte de seu bando era inevitável.\n"+
+                            "\nCom pesar, "+principal.Nome()+ " olhou para os olhos de seus companheiros feridos, e a\n"+
                             "tristeza invadiu seu coração.\n"+
-                            "- "+nome+" ''Precisamos fugir! Não há mais esperança aqui.''\n"+
+                            "- "+principal.Nome()+" ''Precisamos fugir! Não há mais esperança aqui.''\n"+
                             "\nJuntos, eles correram para o navio destruído, desesperados por escapa\n"+
                             "daquela carnificina. Mas enquanto lutavam para abrir caminho entre os\n"+
-                            "inimigos, um por um, os companheiros de "+NOME+" caíram. Seus gritos de dor\n"+
+                            "inimigos, um por um, os companheiros de "+principal.Nome()+" caíram. Seus gritos de dor\n"+
                             "e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.\n", 20);
                     System.out.println("\n");
 
-                    digitacao("Finalmente, restava apenas "+nome+". Sua mente estava turva com a dor e a\n"+
+                    digitacao("Finalmente, restava apenas "+principal.Nome()+". Sua mente estava turva com a dor e a\n"+
                             "perda, mas ele sabia que tinha que sobreviver. Cada celula de seu corpo\n"+
                             "clamava por vingança, mas ele se obrigou a seguir em frente, lutando com\n"+
                             "as últimas gotas de energia que lhe restavam.\n"+
-                            "\nCom lágrimas em seus olhos, nome conseguiu escapar daquele pesadelo.\n"+
+                            "\nCom lágrimas em seus olhos, principal.Nome() conseguiu escapar daquele pesadelo.\n"+
                             "Sozinho, ele passou o resto da sua vida infima vagando pelos mares,\n"+
                             "consumido pela culpa e pela tristeza por ter sido o único a sobreviver.\n", 45);
                     System.out.println("\n");
@@ -157,9 +157,9 @@ public class App {
                 //fugir
                 else{
                     System.out.println("\n");
-                    digitacao(""+nome+" pensou profundamente, considerando as consequências de enfrentar\n"+
+                    digitacao(""+principal.Nome()+" pensou profundamente, considerando as consequências de enfrentar\n"+
                             "Vegapunk, um dos piratas mais infames e temidos dos mares.\n"+
-                            "\n- "+nome+" ''Capitão, se lutarmos agora, seremos superados em números e completamente\n"+
+                            "\n- "+principal.Nome()+" ''Capitão, se lutarmos agora, seremos superados em números e completamente\n"+
                             "aniquilados. Vamos recuar, ganhar tempo e fortalecer nossa tripulação.\n"+
                             "nos preparar para enfrentar esse desgraçado e quando estivermos prontos\n"+
                             "ninguém ousará desafiar os Piratas Rumbar novamente!!!", 20);
@@ -183,20 +183,20 @@ public class App {
                             "\nNo auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Vegapunk.\n"+
                             "A lâmina afiada Vegapunk atravessou de o corpo de Yorki, cortando seus sonhos e\n"+
                             "esperanças em um instante cruel. Ele caiu de joelhos.\n"+
-                            "\nEnquanto "+nome+" presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de\n"+
+                            "\nEnquanto "+principal.Nome()+" presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de\n"+
                             "seu ser. Com um grito, ele se lançou contra Vegapunk, jurando vingança pelo seu capitão.\n"+
                             "\nGolpes brutais eram desferidos. O sangue escorria dos ferimentos, Com a habilidade\n"+
-                            "aprimorada pela chama da vingança, "+nome+" conseguiu encontrar uma brecha na defesa de\n"+
+                            "aprimorada pela chama da vingança, "+principal.Nome()+" conseguiu encontrar uma brecha na defesa de\n"+
                             "Vegapunk. Com um golpe poderoso finalmente derrotou o infame capitão.\n"+
-                            "\nAo ver seu líder derrotado, os seguidores de Vegapunk recuaram, deixando "+nome+"\n"+
+                            "\nAo ver seu líder derrotado, os seguidores de Vegapunk recuaram, deixando "+principal.Nome()+"\n"+
                             "exausto, mas triunfante. Ele caiu de joelhos, olhando para o céu enquanto a chuva\n"+
                             "lavava seu rosto coberto de sangue.\n"+
-                            "\nCom o coração pesado pela perda de Yorki, "+nome+" jurou honrar a memória de seu capitão\n"+
+                            "\nCom o coração pesado pela perda de Yorki, "+principal.Nome()+" jurou honrar a memória de seu capitão\n"+
                             "e conduzir os Piratas Rumbar à grandiosidade. O legado de Yorki viveria através dele\n"+
                             "e de sua determinação.\n"+
-                            "\nEnquanto a chuva caía sobre a costa da última ilha, "+nome+" se levantou, olhando para o\n"+
+                            "\nEnquanto a chuva caía sobre a costa da última ilha, "+principal.Nome()+" se levantou, olhando para o\n"+
                             "horizonte com um olhar de determinação. Ele sabia que ainda havia um tesouro a ser \n"+
-                            "conquistado, e os Piratas Rumbar continuariam sua jornada, agora com "+nome+" como seu novo capitão.\n", 20);
+                            "conquistado, e os Piratas Rumbar continuariam sua jornada, agora com "+principal.Nome()+" como seu novo capitão.\n", 20);
                     System.out.println("\n");
 
                     digitacao("|  F I M  |", 70);
