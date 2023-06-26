@@ -3,19 +3,57 @@ public class personagem{
 
     int bravura = 100;
 
-    personagem(String nome){
+    public void dizBravura(){
+        System.out.println(nome+" |  Bravura: "+bravura);
+        System.out.println("");
+    }
+
+    public personagem(String nome){
         this.nome = nome;
     }     
  
-    String Nome(){
+    public String Nome(){
         return nome;
     }
     
-    int tiraBravura(int quantidade){
-        return bravura = bravura - quantidade;
+    public void perdeBravura(int quantidade){
+        bravura = bravura - quantidade;
+    
+        if(bravura > 0){
+            System.out.println(nome);
+            System.out.println("Perdeu "+quantidade+" de bravura" );
+            System.out.println("Sua bravura atual é de: "+bravura);
+            System.out.println("");
+        }
+
+        else{
+            System.out.println(nome);
+            System.out.println("Perdeu "+quantidade+" de bravura" );
+            System.out.println("Sua bravura se esgotou.");
+            System.out.println(nome+" Não consegirá alcançar o One Piece...");
+            System.out.println("");
+           }
+
     }
 
-    int ganhaBravura(int quantidade){
-        return bravura = bravura + quantidade;
+    public void ganhaBravura(int quantidade){
+        bravura = bravura + quantidade;
+        
+        if(bravura < 190){
+            System.out.println(nome);
+            System.out.println("Ganhou "+quantidade+" de bravura" );
+            System.out.println("Sua bravura atual é de: "+bravura);
+            System.out.println("");
+        }
+
+        else{
+            System.out.println(nome);
+            System.out.println("Ganhou "+quantidade+" de bravura" );
+            System.out.println("Sua bravura chegou ao Maximo!!");
+            System.out.println(nome+" Conquistou seu sonho !!");
+            System.out.println("");
+           }
+
     }
+
 }
