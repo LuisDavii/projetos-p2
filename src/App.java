@@ -108,7 +108,7 @@ public class App {
                     principal.dizBravura();
                     yorki.dizBravura();
 
-                    digitacao("- " + principal.nome
+                    digitacao("- " + principal.noame
                             + " ''Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n" +
                             "Se a luta é necessária para proteger nossa tripulação e nossos objetivos,\n" +
                             "então devemos enfrentá-la sem hesitação. Não fugiremos do combate\n" +
