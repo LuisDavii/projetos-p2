@@ -3,26 +3,26 @@ public class personagem{
 
     int bravura = 100;
 
-    public void dizBravura(){
-        System.out.println(nome+" |  Bravura: "+bravura);
-        System.out.println("");
-    }
-
     public personagem(String nome){
         this.nome = nome;
-    }     
- 
+    }   
+
+    public void dizBravura(){
+        System.out.println(nome+" |  Bravura: "+bravura);
+        
+    }
+  
     public void mudaBravura(int quantidade){
         bravura = bravura += quantidade;
         
         if(bravura > 0 && quantidade<0){
             System.out.println(nome);
-            System.out.println("Perdeu "+quantidade+" de bravura" );
+            System.out.println("Perdeu "+quantidade+" de bravura");
             System.out.println("Sua bravura atual é de: "+bravura);
             System.out.println("");
         }
 
-        else if(bravura<0){
+        else if(bravura<=0){
             System.out.println(nome);
             System.out.println("Perdeu "+quantidade+" de bravura" );
             System.out.println("Sua bravura se esgotou.");
