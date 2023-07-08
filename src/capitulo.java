@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 public class capitulo {
      Scanner insira = new Scanner(System.in);
-     String titulo, txt, apreOpc1, apreOpc2;
+     String titulo, txt, txtOpc1, txtOpc2;
      personagem principal;
      personagem secundario;
      int mudaQnt;
+     String[] escolhasTxt = new String[2];
 
-    capitulo(String titulo, String txt, personagem principal, personagem secundario){
+    capitulo(String titulo, String txt, personagem principal, personagem secundario, String[] esolhasTxt){
          this.titulo = titulo;
          this.principal = principal;
          this.txt = txt;
          this.secundario = secundario;
+         this.escolhasTxt = esolhasTxt;
      }
 
 
@@ -22,34 +24,39 @@ public class capitulo {
              secundario.dizBravura();
              }
          digitacao(txt, 15);
+         if(escolhasTxt != null){
+            for(int i = 0; i < escolhasTxt.length ; i++){
+                digitacao(escolhasTxt[i], 20);
+            }
+         }
     }
 
-    void txtOpcoes(String apreOpc1, String apreOpc2){
-        this.apreOpc1 = apreOpc1; 
-        this.apreOpc2 = apreOpc2;
-    }
     
-    boolean escolha(String opc1, String opc2) {
-        digitacao(apreOpc1, 15);
-        digitacao(apreOpc2, 15);
+    
+    String escolha(String[] escolhasTxt ,String opc1, String opc2) {
+        if(escolhasTxt != null){
+            for(int i = 0; i < escolhasTxt.length ; i++){
+                digitacao(escolhasTxt[i], 20);
+            }}
         boolean continua = true;
-        boolean primeiro = true;
-
+        
+        int i = 0;
         while (continua) {
             
             String escolha = insira.nextLine();
             if (escolha.equalsIgnoreCase(opc1)) {
                 continua = false;
+                i = 0;
 
             } else if (escolha.equalsIgnoreCase(opc2)) {
                 continua = false;
-                primeiro = false;
+                i = 1;
             } else {
                 digitacao("Você não digitou uma opção válida, tente novamente!!", 40);
             }
         
         }
-        return primeiro;
+        return escolhasTxt[i];      
     } 
 
     void mudaBravura(int mudaQnt, personagem qPersonagem){ 
