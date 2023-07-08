@@ -29,9 +29,10 @@ public class App {
 
                 personagem principal = new personagem(insira.nextLine());
                 System.out.println("");
-       
-                // Cap 1 | Texto
+                String[] escolhas = new String[];
 
+                // Cap 1 | Texto
+                
                 String cap1 = "Capitulo I | A Duvida Incessante";
                 String txtCap1 = "Em um pequeno vilarejo no North Blue, vivia um(a) jovem chamado(a) " + principal.nome + ".\n" +
                         "Fascinado(a) pelas histórias de piratas, ele(a) sonhava em se juntar a uma\n" +
@@ -44,7 +45,7 @@ public class App {
                         "enfrentando rivais implacáveis. O destino do One Piece aguarda por você!!";
                 String txtOpc2_cap1 = "| Desistir | O sol poente lança uma sombra melancólica sobre a pequena\n" +
                         "vila onde vive " + principal.nome + ".";
-
+                
                 // Cap 2.1 | texto
                 // Tentar      
                 
@@ -220,7 +221,7 @@ public class App {
 
                 // Cap 2.2 | Texto
                 // Desistir
-
+ 
                 String cap2_2 = "Capitulo II | O Adeus ao Mar";
 
                 String txtCap2_2 = "" + principal.nome
@@ -248,20 +249,24 @@ public class App {
 
 
                 // Cap 1 | lógica
-        
-                capitulo capitulo1 = new capitulo( cap1 , txtCap1 , principal , null );
+                
+                escolhas[0] = txtOpc1_cap1;
+                escolhas[1] = txtOpc2_cap1;
+                capitulo capitulo1 = new capitulo( cap1 , txtCap1 , principal , null , escolhas);
                 capitulo1.historia();
-                capitulo1.txtOpcoes(txtOpc1_cap1,txtOpc2_cap1);
-                if(capitulo1.escolha("tentar", "desistir")){
+                if(capitulo1.escolha(escolhas,"tentar", "desistir") == escolhas[0]){
                         
                         //Opç Tentar
-                        capitulo capitulo2_1 = new capitulo( cap2_1 , txtCap2_1 , principal, null );
+                        escolhas[0] = txtOpc1_cap2_1;
+                        escolhas[1] = txtOpc2_cap2_1;
+                        capitulo capitulo2_1 = new capitulo( cap2_1 , txtCap2_1 , principal, null , escolhas);
                         capitulo2_1.historia();
-                        capitulo2_1.txtOpcoes(txtOpc1_cap2_1, txtOpc2_cap2_1);
                         
-                                if(capitulo2_1.escolha("rumbar","bellamy")){
+                                if(capitulo2_1.escolha(escolhas,"rumbar","bellamy") == escolhas[0] ){
                                         //Caso Rumbar
                                         personagem yorki = new personagem("Yorki");
+                                        escolhas[0] = 
+                                        escolhas[1]
                                         capitulo capitulo2_1_1 = new capitulo( cap2_1_1 , txtCap2_1_1 , principal , yorki );
                                         capitulo2_1_1.historia();
                                         capitulo2_1_1.mudaBravura(20,principal);
