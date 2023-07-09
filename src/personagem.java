@@ -22,7 +22,7 @@ public class personagem{
             System.out.println("");
         }
 
-        else if(bravura<=0){
+        else if(bravura<=0 && quantidade != 0){
             System.out.println(nome);
             System.out.println("Perdeu "+quantidade+" de bravura" );
             System.out.println("Sua bravura se esgotou.");
@@ -38,13 +38,16 @@ public class personagem{
             System.out.println("");
         }
 
-        else{
+        else if(bravura >= 200 && quantidade != 0){
             System.out.println(nome);
             System.out.println("Ganhou "+quantidade+" de bravura" );
             System.out.println("Sua bravura chegou ao Maximo!!");
             System.out.println(nome+" Conquistou seu sonho !!");
             System.out.println("");
            }
+        else {
+
+        }
 
     }
 

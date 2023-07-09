@@ -8,38 +8,56 @@ public class capitulo {
      int mudaQnt;
      String[] escolhasTxt = new String[2];
 
-    capitulo(String titulo, String txt, personagem principal, personagem secundario, String[] esolhasTxt){
-         this.titulo = titulo;
-         this.principal = principal;
-         this.txt = txt;
-         this.secundario = secundario;
-         this.escolhasTxt = esolhasTxt;
-     }
+        capitulo(String titulo, String txt, personagem principal, personagem secundario, String[] esolhasTxt){
+             this.titulo = titulo;
+             this.principal = principal;
+             this.txt = txt;
+             this.secundario = secundario;
+             this.escolhasTxt = esolhasTxt;
+        }
 
-
-    public void historia(){
+       public void historia(){
          digitacao(titulo, 70);
          principal.dizBravura();
-         if(secundario != null){
-             secundario.dizBravura();
-             }
-         digitacao(txt, 15);
-         if(escolhasTxt != null){
-            for(int i = 0; i < escolhasTxt.length ; i++){
-                digitacao(escolhasTxt[i], 20);
+
+            if(secundario != null){
+                  secundario.dizBravura();
             }
-         }
-    }
+
+         digitacao(txt, 15);
+
+            if(escolhasTxt != null){
+                for(int i = 0; i < escolhasTxt.length ; i++){
+                    digitacao(escolhasTxt[i], 20);
+                }
+            }
+        }
+
+        public void historia(String txt2,int qntBravura, personagem principal, personagem secundario){
+            digitacao(titulo, 70);
+            principal.dizBravura();
+            if(secundario != null){
+                secundario.dizBravura();
+            }
+            digitacao(txt, 15);
+
+            principal.mudaBravura(qntBravura);
+            secundario.mudaBravura(qntBravura);
+            
+            digitacao(txt2, 20);
+            
+            
+            if(escolhasTxt != null){
+                for(int i = 0; i < escolhasTxt.length ; i++){
+                    digitacao(escolhasTxt[i], 20);
+                }
+            }
+        }
 
     
     
-    String escolha(String[] escolhasTxt ,String opc1, String opc2) {
-        if(escolhasTxt != null){
-            for(int i = 0; i < escolhasTxt.length ; i++){
-                digitacao(escolhasTxt[i], 20);
-            }}
+    String escolha(String opc1, String opc2) {
         boolean continua = true;
-        
         int i = 0;
         while (continua) {
             
