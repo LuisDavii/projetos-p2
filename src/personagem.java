@@ -8,7 +8,7 @@ public class personagem{
     }   
 
     public void dizBravura(){
-        System.out.println(nome+" |  Bravura: "+bravura);
+        print(nome+" |  Bravura: "+bravura,15 );
         
     }
   
@@ -16,38 +16,40 @@ public class personagem{
         bravura = bravura += quantidade;
         
         if(bravura > 0 && quantidade<0){
-            System.out.println(nome);
-            System.out.println("Perdeu "+quantidade+" de bravura");
-            System.out.println("Sua bravura atual é de: "+bravura);
-            System.out.println("");
+            print(nome,15 );
+            print("Perdeu "+quantidade+" de bravura",15 );
+            print("Sua bravura atual é de: "+bravura,15 );
+            print("",15 );
         }
 
         else if(bravura<=0 && quantidade != 0){
-            System.out.println(nome);
-            System.out.println("Perdeu "+quantidade+" de bravura" );
-            System.out.println("Sua bravura se esgotou.");
-            System.out.println(nome+" Não consegirá alcançar o One Piece...");
-            System.out.println("");
+            print(nome,15 );
+            print("Perdeu "+quantidade+" de bravura" ,15 );
+            print("Sua bravura se esgotou.",15 );
+            print(nome+" Não consegirá alcançar o One Piece...",15 );
+            print("",15 );
            }
         
         else if(bravura < 190 && quantidade>0){
-            System.out.println(nome);
-            System.out.println("Ganhou "+quantidade+" de bravura" );
-            System.out.println("Sua bravura atual é de: "+bravura);
-            System.out.println("");
+            print(nome,15 );
+            print("Ganhou "+quantidade+" de bravura" ,15 );
+            print("Sua bravura atual é de: "+bravura,15 );
+            print("",15 );
         }
 
         else if(bravura >= 200 && quantidade != 0){
-            System.out.println(nome);
-            System.out.println("Ganhou "+quantidade+" de bravura" );
-            System.out.println("Sua bravura chegou ao Maximo!!");
-            System.out.println(nome+" Conquistou seu sonho !!");
-            System.out.println("");
+            print(nome,15 );
+            print("Ganhou "+quantidade+" de bravura" ,15 );
+            print("Sua bravura chegou ao Maximo!!",15 );
+            print(nome+" Conquistou seu sonho !!",15 );
+            print("",15 );
            }
         else {
 
         }
 
     }
-
+    public static void print(String texto, int velocidade) {
+        capitulo.print(texto,20);
+    }
 }
