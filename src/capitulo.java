@@ -17,39 +17,39 @@ public class capitulo {
         }
 
        public void historia(){
-         digitacao(titulo, 70);
+         print(titulo, 70);
          principal.dizBravura();
 
             if(secundario != null){
                   secundario.dizBravura();
             }
 
-         digitacao(txt, 15);
+         print(txt, 15);
 
             if(escolhasTxt != null){
                 for(int i = 0; i < escolhasTxt.length ; i++){
-                    digitacao(escolhasTxt[i], 20);
+                    print(escolhasTxt[i], 20);
                 }
             }
         }
 
         public void historia(String txt2,int qntBravura, personagem principal, personagem secundario){
-            digitacao(titulo, 70);
+            print(titulo, 70);
             principal.dizBravura();
             if(secundario != null){
                 secundario.dizBravura();
             }
-            digitacao(txt, 15);
+            print(txt, 15);
 
             principal.mudaBravura(qntBravura);
             secundario.mudaBravura(qntBravura);
             
-            digitacao(txt2, 20);
+            print(txt2, 20);
             
             
             if(escolhasTxt != null){
                 for(int i = 0; i < escolhasTxt.length ; i++){
-                    digitacao(escolhasTxt[i], 20);
+                    print(escolhasTxt[i], 20);
                 }
             }
         }
@@ -67,7 +67,7 @@ public class capitulo {
                      return n;
                     }
                 } 
-            digitacao("Você não digitou uma opção válida, tente novamente!!", 40);
+            print("Você não digitou uma opção válida, tente novamente!!", 40);
             
         } 
         return 0;
@@ -78,14 +78,14 @@ public class capitulo {
     }
           
     void soTxt(String txt2){
-        digitacao(txt2, 30);
+        print(txt2, 30);
     }
               
     void fim(){
-        digitacao("|  F I M  |", 70);
+        print("|  F I M  |", 70);
     }
     
-    public static void digitacao(String texto, int velocidade) {
+    public static void print(String texto, int velocidade) {
         // "texto.length" pra saber o tamanho da string e percorrê la, e imprimir letra
         // por letra
         for (int i = 0; i < texto.length(); i++) {
