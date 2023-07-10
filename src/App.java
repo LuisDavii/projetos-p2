@@ -5,18 +5,18 @@ public class App {
                 Scanner insira = new Scanner(System.in);
 
                 // introdução
-                digitacao("  Riquezas ", 20);
-                digitacao("  Fama", 20);
-                digitacao("  Poder", 20);
-                digitacao("  Um homem conquistou tudo que o mundo tinha a oferecer, o Rei dos Piratas, Gold Roger." +
+                print("  Riquezas ", 20);
+                print("  Fama", 20);
+                print("  Poder", 20);
+                print("  Um homem conquistou tudo que o mundo tinha a oferecer, o Rei dos Piratas, Gold Roger." +
                         "\nAntes de ser executado, suas últimas palavras levaram multidões aos mares: ", 20);
-                digitacao(
+                print(
                         "- Gold roger ''Querem o meu tesouro? Fiquem a vontade para pegá-lo, procurem, nele está tudo que este mundo pode dar a vocês!''",
                         20);
-                digitacao("E assim se iniciou a grande era dos piratas.", 20);
+                print("E assim se iniciou a grande era dos piratas.", 20);
 
                 // Nome
-                digitacao("Olá Aventureiro(a), como posso te chamar ? ", 40);
+                print("Olá Aventureiro(a), como posso te chamar ? ", 40);
                 personagem principal = new personagem(insira.nextLine());
                 System.out.println("");
                 String[] txtEscolhas = new String[2];
@@ -308,7 +308,7 @@ public class App {
                 }
                 insira.close();
         }
-        public static void digitacao(String texto, int velocidade) {
-         capitulo.digitacao(texto,20);
+        public static void print(String texto, int velocidade) {
+         capitulo.print(texto,20);
         }
 }
