@@ -5,7 +5,6 @@ public class App {
                 Scanner insira = new Scanner(System.in);
 
                 // introdução
-
                 digitacao("  Riquezas ", 20);
                 digitacao("  Fama", 20);
                 digitacao("  Poder", 20);
@@ -17,16 +16,13 @@ public class App {
                 digitacao("E assim se iniciou a grande era dos piratas.", 20);
 
                 // Nome
-
                 digitacao("Olá Aventureiro(a), como posso te chamar ? ", 40);
-
                 personagem principal = new personagem(insira.nextLine());
                 System.out.println("");
                 String[] txtEscolhas = new String[2];
                 String[] escolha = new String[2];
 
                 // Cap 1 | Texto
-                
                 String cap1 = "Capitulo I | A Duvida Incessante";
                 String txtCap1 = "Em um pequeno vilarejo no North Blue, vivia um(a) jovem chamado(a) " + principal.nome + ".\n" +
                         "Fascinado(a) pelas histórias de piratas, ele(a) sonhava em se juntar a uma\n" +
@@ -41,8 +37,7 @@ public class App {
                         "vila onde vive " + principal.nome + ".";
                 
                 // Cap 2| texto
-                // Tentar      
-                
+                // Tentar       
                 String cap2= "Capitulo II | A Jornada Começa !!";
                 String txtcap2= "Determinado(a)," + principal.nome + " busca uma tripulação que aceite aprendizes em sua\n" +
                         "jornada. Ele(a) se depara com Dois navios ancorados no porto:\nUm navio dos Piratas Rumbar" +
@@ -52,7 +47,6 @@ public class App {
                 
                 // Cap 3 | texto
                 // Caso Rumbar
-
                 String cap3= "" ;
                 String txtcap3= "Como um pirata novato, você se junta a uma pequena tripulação dos\n" +
                                 "Piratas Rumbar, liderada pelo audacioso Capitão Yorki.\n"+
@@ -75,15 +69,12 @@ public class App {
 
                 // Cap 4 | texto
                 // Lutar               
-        
                 String cap4 = "Capitulo III | Turbulência dos Mares: A Jornada de ";
-
                 String txtcap4 = "- " + principal.nome
                                 + " ''Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n" +
                                 "Se a luta é necessária para proteger nossa tripulação e nossos objetivos,\n" +
                                 "então devemos enfrentá-la sem hesitação. Não fugiremos do combate\n" +
                                 "quando a honra e nossa liberdade estiverem em jogo!!''";
-
                 String txt2_cap4 = "Chegou o dia em que o destino da tripulação tomou um rumo trágico.\n" +
                                 principal.nome + ", estava pronto para provar seu valor no campo de batalha.\n" +
                                 "Ao lado do capitão Yorki e dos companheiros de tripulação, ele erguia\n" +
@@ -99,13 +90,11 @@ public class App {
                                 + " olhou para os olhos de seus companheiros feridos, e a\n" +
                                 "tristeza invadiu seu coração.\n"+
                                 "\n- " + principal.nome + " ''Precisamos fugir! Não há mais esperança aqui.''";
-
                 String txt3_cap4 = "\nJuntos, eles correram para o navio destruído, desesperados por escapa\n" +
                                 "daquela carnificina. Mas enquanto lutavam para abrir caminho entre os\n" +
                                 "inimigos, um por um, Cap Yorki e outros companheiros de " + principal.nome
                                 + " caíram. Seus gritos de dor\n" +
                                 "e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.\n";
-
                 String txt4_cap4 = "Finalmente, restava apenas " + principal.nome
                                 + ". Sua mente estava turva com a dor e a\n" +
                                 "perda, mas ele sabia que tinha que sobreviver. Cada celula de seu corpo\n" +
@@ -119,7 +108,6 @@ public class App {
 
                 // Cap 5 | texto
                 // Fugir
-
                 String txtfala = "" + principal.nome
                                 + " pensou profundamente, considerando as consequências de enfrentar\n" +
                                 "Vegapunk, um dos piratas mais infames e temidos dos mares.\n" +
@@ -128,9 +116,7 @@ public class App {
                                 "aniquilados. Vamos recuar, ganhar tempo e fortalecer nossa tripulação.\n" +
                                 "nos preparar para enfrentar esse desgraçado e quando estivermos prontos\n" +
                                 "ninguém ousará desafiar os Piratas Rumbar novamente!!!";
-
                 String cap5 = "Capitulo III | Hachinosu Sangue e Tesouros";
-
                 String txtcap5 = "Após meses de preparação, os Piratas Rumbar finalmente chegaram à última\n" +
                                 "ilha da Grand Line. Era um lugar misterioso e perigoso, conhecido como\n" +
                                 "''Hachinosu'', Eles estavam determinados a conquistar a fama e a fortuna que\n" +
@@ -142,7 +128,6 @@ public class App {
                                 +
                                 "\nOs Piratas Rumbar revidaram, disparando seus próprios canhões em resposta ao\n" +
                                 "ataque.";
-
                 String txt2_cap5 = "Enquanto os Piratas Rumbar resistiam bravamente, Yorki tomou uma\n" +
                                 "decisão audaciosa. Ele ordenou que a sua frota se aproximassem do inimigo,\n" +
                                 "buscando um confronto corpo a corpo. A batalha se intensificou à medida que os navios colidiam\n"
@@ -150,11 +135,9 @@ public class App {
                                 "\nNo auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Vegapunk.\n" +
                                 "A lâmina afiada Vegapunk atravessou de o corpo de Yorki, cortando seus sonhos e\n" +
                                 "esperanças em um instante cruel. Ele caiu de joelhos.";
-
                 String txt3_cap5 = "\nEnquanto " + principal.nome
                                 + " presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de\n" +
                                 "seu ser. Com um grito, ele se lançou contra Vegapunk, jurando vingança pelo seu capitão!!";
-
                 String txt4_cap5 = "\nGolpes brutais eram desferidos. O sangue escorria dos ferimentos, Com a habilidade\n" +
                                 "aprimorada pela chama da vingança, " + principal.nome
                                 + " conseguiu encontrar uma brecha na defesa de\n" +
@@ -176,9 +159,7 @@ public class App {
 
                 // Cap 6 | Texto
                 // Bellamy
-
                 String cap6 = "Capitulo III | "+principal.nome+", da Revolta à Justiça nos Mares";
-
                 String txtCap6 = "Atraído pela promessa de poder e fama que o Capitão Bellamy representava, "
                                 + principal.nome + " se\n" +
                                 "juntou à tripulação\n"+
@@ -186,7 +167,6 @@ public class App {
                                 + " percebeu que Bellamy tinha uma visão distorcida\n" +
                                 "de sucesso, desprezava a ideia de sonhos e ambições, acreditando que o mundo era um \n" +
                                 "lugar cruel e que apenas os mais fortes mereciam sucesso.\n";
-
                 String txt2_cap6 = "\nCerto dia marco e seus companheiros chegaram à ilha Jaya, cruzaram seu caminho com\n" +
                                 "Luffy o capitão dos Chapéus de Palha. Bellamy, cheio de arrogância, zombou de Luffy\n" +
                                 "e seus sonhos de encontrar o One Piece, desencadeando uma intensa desavença entre os\n" +
@@ -198,7 +178,6 @@ public class App {
                                 "profundamente " + principal.nome
                                 + ", que se viu questionando se o caminho pirata era realmente o que\n" +
                                 "ele desejava seguir";
-
                 String txt3_cap6 = "Após o confronto, Luffy se aproximou de " + principal.nome
                                 + " com um sorriso sincero. Ele reconheceu\n" +
                                 "o potencial e a determinação de " + principal.nome
@@ -215,9 +194,7 @@ public class App {
 
                 // Cap 7 | Texto
                 // Desistir
- 
                 String cap7 = "Capitulo II | O Adeus ao Mar";
-
                 String txtCap7 = "" + principal.nome
                         + " reúne sua coragem e parte em busca do seu sonho. Ele se junta a uma tripulação\n" +
                         "e juntos, eles embarcam em um pequeno navio rumo ao desconhecido.\n" +
@@ -240,10 +217,9 @@ public class App {
                         "é a melhor maneira de proteger aqueles que ama e evitar um destino trágico.\n";
                 // fim
         
+                // lógica
 
-
-                // Cap 1 | lógica
-                
+                // Cap 1 
                 txtEscolhas[0] = txtOpc1_cap1;
                 txtEscolhas[1] = txtOpc2_cap1;
                 escolha[0] = "tentar"; 
@@ -251,18 +227,17 @@ public class App {
                 capitulo capitulo1 = new capitulo( cap1 , txtCap1 , principal , null , txtEscolhas);
                 capitulo1.historia();
                 
+                //Opç Tentar
                 if(capitulo1.escolha(escolha) == 0){
-                        
-                        //Opç Tentar
                         txtEscolhas[0] = txtOpc1_cap2;
                         txtEscolhas[1] = txtOpc2_cap2;
                         escolha[0] = "rumbar"; 
                         escolha[1] = "bellamy";
                         capitulo capitulo2 = new capitulo( cap2, txtcap2, principal, null , txtEscolhas);
                         capitulo2.historia();
-                        
+
+                                //Caso Rumbar
                                 if(capitulo2.escolha(escolha) == 0 ){
-                                        //Caso Rumbar
                                         personagem yorki = new personagem("Yorki");
                                         txtEscolhas[0] = txtOpc1_cap3;
                                         txtEscolhas[1] = txtOpc2_cap3; 
@@ -271,9 +246,8 @@ public class App {
                                         capitulo capitulo3 = new capitulo( cap3, txtcap3, principal , yorki , txtEscolhas);
                                         capitulo3.historia(txt2_cap3,20,principal,yorki);
                                         
-                                
+                                        //Lutar 
                                         if(capitulo3.escolha(escolha) == 0){
-                                                //Lutar 
                                                 capitulo capitulo4 = new capitulo( cap4 , txtcap4 , principal , yorki , null)  ;
                                                 capitulo4.historia();
                                                 capitulo4.mudaBravura(20,principal);
@@ -289,8 +263,8 @@ public class App {
                                                 //fim
                                         }
 
+                                        //Fugir
                                         else{
-                                                //Fugir
                                                 capitulo capitulo5 = new capitulo( cap5 , txtcap5 , principal , yorki , null);
                                                 capitulo5.soTxt(txtfala);
                                                 capitulo5.mudaBravura(-20,principal);
@@ -309,8 +283,8 @@ public class App {
                                         }
                                 }
 
+                                //Caso Bellamy
                                 else{
-                                        //Caso Bellamy
                                         personagem bellamy = new personagem("bellamy");
                                         capitulo capitulo6 = new capitulo(cap6,txtCap6,principal,bellamy,null);
                                         capitulo6.historia();
@@ -324,6 +298,7 @@ public class App {
                                         //fim
                                 }  
                 }
+                //Caso desista
                 else {
                         capitulo capitulo7 = new capitulo(cap7,txtCap7,principal,null,null);
                         capitulo7.historia();
@@ -336,5 +311,4 @@ public class App {
         public static void digitacao(String texto, int velocidade) {
          capitulo.digitacao(texto,20);
         }
-
 }

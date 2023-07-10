@@ -29,7 +29,6 @@ public class personagem{
             System.out.println(nome+" Não consegirá alcançar o One Piece...");
             System.out.println("");
            }
-
         
         else if(bravura < 190 && quantidade>0){
             System.out.println(nome);
