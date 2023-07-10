@@ -54,8 +54,6 @@ public class capitulo {
             }
         }
 
-    
-    
     int escolha(String[] opcoes) {
         boolean continua = true;
         int n = 0;
@@ -87,31 +85,6 @@ public class capitulo {
         digitacao("|  F I M  |", 70);
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void digitacao(String texto, int velocidade) {
         // "texto.length" pra saber o tamanho da string e percorrê la, e imprimir letra
         // por letra
@@ -129,7 +102,5 @@ public class capitulo {
             }
         }
         System.out.println("\n");
-    }
-
-    
+    } 
 }
