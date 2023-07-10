@@ -6,7 +6,7 @@ public class capitulo {
      personagem principal;
      personagem secundario;
      int mudaQnt;
-     String[] escolhasTxt = new String[2];
+     String[] escolhasTxt;
 
         capitulo(String titulo, String txt, personagem principal, personagem secundario, String[] esolhasTxt){
              this.titulo = titulo;
@@ -56,26 +56,24 @@ public class capitulo {
 
     
     
-    String escolha(String opc1, String opc2) {
+    int escolha(String[] opcoes) {
         boolean continua = true;
-        int i = 0;
+        int n = 0;
         while (continua) {
             
             String escolha = insira.nextLine();
-            if (escolha.equalsIgnoreCase(opc1)) {
-                continua = false;
-                i = 0;
-
-            } else if (escolha.equalsIgnoreCase(opc2)) {
-                continua = false;
-                i = 1;
-            } else {
-                digitacao("Você não digitou uma opção válida, tente novamente!!", 40);
-            }
-        
-        }
-        return escolhasTxt[i];      
-    } 
+            
+                for(int i=0 ; i < opcoes.length ; i++){
+                    if (escolha.equalsIgnoreCase(opcoes[i])){
+                     n = i;
+                     return n;
+                    }
+                } 
+            digitacao("Você não digitou uma opção válida, tente novamente!!", 40);
+            
+        } 
+        return 0;
+    }
 
     void mudaBravura(int mudaQnt, personagem qPersonagem){ 
         qPersonagem.mudaBravura(mudaQnt);

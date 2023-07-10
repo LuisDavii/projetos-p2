@@ -1,26 +1,19 @@
 import java.util.Scanner;
 
-
 public class App {
-
         public static void main(String[] args) {
                 Scanner insira = new Scanner(System.in);
 
                 // introdução
 
                 digitacao("  Riquezas ", 20);
-
                 digitacao("  Fama", 20);
-
                 digitacao("  Poder", 20);
-
                 digitacao("  Um homem conquistou tudo que o mundo tinha a oferecer, o Rei dos Piratas, Gold Roger." +
                         "\nAntes de ser executado, suas últimas palavras levaram multidões aos mares: ", 20);
-
                 digitacao(
                         "- Gold roger ''Querem o meu tesouro? Fiquem a vontade para pegá-lo, procurem, nele está tudo que este mundo pode dar a vocês!''",
                         20);
-
                 digitacao("E assim se iniciou a grande era dos piratas.", 20);
 
                 // Nome
@@ -29,7 +22,8 @@ public class App {
 
                 personagem principal = new personagem(insira.nextLine());
                 System.out.println("");
-                String[] escolhas = new String[2];
+                String[] txtEscolhas = new String[2];
+                String[] escolha = new String[2];
 
                 // Cap 1 | Texto
                 
@@ -250,28 +244,35 @@ public class App {
 
                 // Cap 1 | lógica
                 
-                escolhas[0] = txtOpc1_cap1;
-                escolhas[1] = txtOpc2_cap1;
-                capitulo capitulo1 = new capitulo( cap1 , txtCap1 , principal , null , escolhas);
+                txtEscolhas[0] = txtOpc1_cap1;
+                txtEscolhas[1] = txtOpc2_cap1;
+                escolha[0] = "tentar"; 
+                escolha[1] = "desistir";
+                capitulo capitulo1 = new capitulo( cap1 , txtCap1 , principal , null , txtEscolhas);
                 capitulo1.historia();
-                if(capitulo1.escolha("tentar", "desistir") == escolhas[0]){
+                
+                if(capitulo1.escolha(escolha) == 0){
                         
                         //Opç Tentar
-                        escolhas[0] = txtOpc1_cap2;
-                        escolhas[1] = txtOpc2_cap2;
-                        capitulo capitulo2 = new capitulo( cap2, txtcap2, principal, null , escolhas);
+                        txtEscolhas[0] = txtOpc1_cap2;
+                        txtEscolhas[1] = txtOpc2_cap2;
+                        escolha[0] = "rumbar"; 
+                        escolha[1] = "bellamy";
+                        capitulo capitulo2 = new capitulo( cap2, txtcap2, principal, null , txtEscolhas);
                         capitulo2.historia();
                         
-                                if(capitulo2.escolha("rumbar","bellamy") == escolhas[0] ){
+                                if(capitulo2.escolha(escolha) == 0 ){
                                         //Caso Rumbar
                                         personagem yorki = new personagem("Yorki");
-                                        escolhas[0] = txtOpc1_cap3;
-                                        escolhas[1] = txtOpc2_cap3;
-                                        capitulo capitulo3 = new capitulo( cap3, txtcap3, principal , yorki , escolhas);
+                                        txtEscolhas[0] = txtOpc1_cap3;
+                                        txtEscolhas[1] = txtOpc2_cap3; 
+                                        escolha[0] = "lutar"; 
+                                        escolha[1] = "fugir";
+                                        capitulo capitulo3 = new capitulo( cap3, txtcap3, principal , yorki , txtEscolhas);
                                         capitulo3.historia(txt2_cap3,20,principal,yorki);
                                         
                                 
-                                        if(capitulo3.escolha("lutar", "fugir") == escolhas[0]){
+                                        if(capitulo3.escolha(escolha) == 0){
                                                 //Lutar 
                                                 capitulo capitulo4 = new capitulo( cap4 , txtcap4 , principal , yorki , null)  ;
                                                 capitulo4.historia();
