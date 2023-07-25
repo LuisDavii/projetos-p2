@@ -2,19 +2,22 @@ import java.util.Scanner;
 
 public class capitulo {
      Scanner insira = new Scanner(System.in);
-     String titulo, txt, txtOpc1, txtOpc2;
+     String titulo;
+     texto[] txt;
      personagem principal;
      personagem secundario;
-     int mudaQnt;
-     String[] escolhasTxt;
+     escolha[] escolhas; 
 
-        capitulo(String titulo, String txt, personagem principal, personagem secundario, String[] esolhasTxt){
+        capitulo(String titulo, texto[] txt, personagem principal, personagem secundario){
              this.titulo = titulo;
              this.principal = principal;
              this.txt = txt;
              this.secundario = secundario;
-             this.escolhasTxt = esolhasTxt;
         }
+
+       public void addEscolhas(escolha[] escolhas){
+        this.escolhas = escolhas;
+       }
 
        public void historia(){
          print(titulo, 70);
@@ -24,67 +27,45 @@ public class capitulo {
                   secundario.dizBravura();
             }
 
-         print(txt, 15);
+            for(int i = 0 ; i < txt.length ; i++){
+                print(txt[i].texto, 20);
+                principal.mudaBravura(txt[i].mudaBravura_P);
+                if(secundario != null){
+                secundario.mudaBravura(txt[i].mudaBravura_S);
+                }
+            }
 
-            if(escolhasTxt != null){
-                for(int i = 0; i < escolhasTxt.length ; i++){
-                    print(escolhasTxt[i], 20);
+            if(escolhas!= null){
+                for(int i = 0; i < escolhas.length ; i++){
+                    print(escolhas[i].txtEscolha, 20);
                 }
             }
         }
 
-        public void historia(String txt2,int qntBravura, personagem principal, personagem secundario){
-            print(titulo, 70);
-            principal.dizBravura();
-            if(secundario != null){
-                secundario.dizBravura();
-            }
-            print(txt, 15);
 
-            principal.mudaBravura(qntBravura);
-            secundario.mudaBravura(qntBravura);
-            
-            print(txt2, 20);
-            
-            
-            if(escolhasTxt != null){
-                for(int i = 0; i < escolhasTxt.length ; i++){
-                    print(escolhasTxt[i], 20);
-                }
-            }
-        }
-
-    int escolha(String[] opcoes) {
-        boolean continua = true;
+    void escolha() {
         int n = 0;
-        while (continua) {
-            
-            String escolha = insira.nextLine();
-            
-                for(int i=0 ; i < opcoes.length ; i++){
-                    if (escolha.equalsIgnoreCase(opcoes[i])){
-                     n = i;
-                     return n;
+        while (n == 0) {
+                String resposta = insira.nextLine();
+                for(int i = 0 ; i < escolhas.length ; i++){
+                    if (resposta.equalsIgnoreCase(escolhas[i].opcao)){
+                     escolhas[i].proximo.executa();  
+                     return;                   
+                    }
+                    else if(escolhas.length == i+1){
+                        
                     }
                 } 
-            print("Você não digitou uma opção válida, tente novamente!!", 40);
             
+            print("Você não digitou uma opção válida, tente novamente!!", 40);
         } 
-        return 0;
     }
 
-    void mudaBravura(int mudaQnt, personagem qPersonagem){ 
-        qPersonagem.mudaBravura(mudaQnt);
+    public void executa(){
+        historia();
+        escolha();
     }
-          
-    void soTxt(String txt2){
-        print(txt2, 30);
-    }
-              
-    void fim(){
-        print("|  F I M  |", 70);
-    }
-    
+
     public static void print(String texto, int velocidade) {
         // "texto.length" pra saber o tamanho da string e percorrê la, e imprimir letra
         // por letra
