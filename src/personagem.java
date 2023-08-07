@@ -1,53 +1,56 @@
-public class personagem{
-    String nome;
+public class personagem {
+    private String nome;
 
-    int bravura = 100;
+    private int bravura = 100;
 
-    public personagem(String nome){
+    public personagem(String nome) {
         this.nome = nome;
-    }   
-
-    public void dizBravura(){
-        System.out.println(nome+" |  Bravura: "+bravura);
-        
     }
-  
-    public void mudaBravura(int quantidade){
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void dizBravura() {
+        System.out.println(nome + " |  Bravura: " + bravura);
+
+    }
+
+    public void mudaBravura(int quantidade) {
         bravura = bravura += quantidade;
-        
-        if(bravura > 0 && quantidade<0){
+
+        if (bravura > 0 && quantidade < 0) {
             System.out.println(nome);
-            System.out.println("Perdeu "+quantidade+" de bravura");
-            System.out.println("Sua bravura atual é de: "+bravura);
+            System.out.println("Perdeu " + quantidade + " de bravura");
+            System.out.println("Sua bravura atual é de: " + bravura);
             System.out.println("");
         }
 
-        else if(bravura<=0 && quantidade != 0){
+        else if (bravura <= 0 && quantidade != 0) {
             System.out.println(nome);
-            System.out.println("Perdeu "+quantidade+" de bravura" );
+            System.out.println("Perdeu " + quantidade + " de bravura");
             System.out.println("Sua bravura se esgotou.");
-            System.out.println(nome+" Não consegirá alcançar o One Piece...");
-            System.out.println("");
-           }
-        
-        else if(bravura < 190 && quantidade>0){
-            System.out.println(nome);
-            System.out.println("Ganhou "+quantidade+" de bravura" );
-            System.out.println("Sua bravura atual é de: "+bravura);
+            System.out.println(nome + " Não consegirá alcançar o One Piece...");
             System.out.println("");
         }
 
-        else if(bravura >= 200 && quantidade != 0){
+        else if (bravura < 190 && quantidade > 0) {
             System.out.println(nome);
-            System.out.println("Ganhou "+quantidade+" de bravura" );
-            System.out.println("Sua bravura chegou ao Maximo!!");
-            System.out.println(nome+" Conquistou seu sonho !!");
+            System.out.println("Ganhou " + quantidade + " de bravura");
+            System.out.println("Sua bravura atual é de: " + bravura);
             System.out.println("");
-           }
-        else {
+        }
+
+        else if (bravura >= 200 && quantidade != 0) {
+            System.out.println(nome);
+            System.out.println("Ganhou " + quantidade + " de bravura");
+            System.out.println("Sua bravura chegou ao Maximo!!");
+            System.out.println(nome + " Conquistou seu sonho !!");
+            System.out.println("");
+        } else {
 
         }
 
     }
-    
+
 }
