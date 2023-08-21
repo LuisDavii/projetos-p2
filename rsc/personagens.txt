@@ -1,0 +1,16 @@
+PERSONAGEM
+principal
+principal
+100
+
+PERSONAGEM 
+secundarioB
+Bellamy
+100
+
+PERSONAGEM
+secundarioR
+Rumbar
+100
+
+

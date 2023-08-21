@@ -1,7 +1,10 @@
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class capitulo {
-    private Scanner insira = new Scanner(System.in);
+    Scanner insira = new Scanner(System.in);
     private String titulo;
     private texto[] txt;
     private personagem principal;
@@ -50,10 +53,34 @@ public class capitulo {
 
                 }
             }
-
             print("Você não digitou uma opção válida, tente novamente!!", 40);
         }
     }
+
+    private void load(){
+        try{
+            FileWriter salva = new FileWriter("rsc/save.txt");
+            salva.write("SAVE\n");
+            salva.write(titulo);
+            salva.write(principal.getNome());
+            salva.close();
+        }
+        catch(IOException e){
+            System.out.println(" não encontrado");
+        }
+    }
+
+    public static void fim(){
+        try{
+            FileWriter salva = new FileWriter("rsc/save.txt");
+            salva.write("");
+            salva.close();
+        }
+        catch(IOException e){
+            System.out.println("!!!");
+        }
+    }
+
 
     public void executa() {
         historia();
@@ -65,18 +92,12 @@ public class capitulo {
     }
 
     public static void print(String texto, int velocidade) {
-        // "texto.length" pra saber o tamanho da string e percorrê la, e imprimir letra
-        // por letra
         for (int i = 0; i < texto.length(); i++) {
-
-            // "texto.charAt" pra pegar determinada caractere do texto e logo em seguida
-            // imprimir
             System.out.print(texto.charAt(i));
-            // "try" e "catch" pra tratamento de exeções
             try {
-                // Thread.sleep() pra fazer o programa esperar determinado tempo
                 Thread.sleep(velocidade);
-            } catch (InterruptedException e) {
+            } 
+            catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }

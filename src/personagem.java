@@ -1,10 +1,10 @@
 public class personagem {
     private String nome;
+    private int bravura;
 
-    private int bravura = 100;
-
-    public personagem(String nome) {
+    public personagem(String nome, int bravura) {
         this.nome = nome;
+        this.bravura = bravura;
     }
 
     public String getNome() {
