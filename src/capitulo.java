@@ -47,6 +47,7 @@ public class capitulo {
             String resposta = insira.nextLine();
             for (int i = 0; i < escolhas.length; i++) {
                 if (resposta.equalsIgnoreCase(escolhas[i].getOpcao())) {
+                    escolhas[i].proxCap();
                     escolhas[i].getProximo().executa();
                     return;
                 } else if (escolhas.length == i + 1) {

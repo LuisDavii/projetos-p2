@@ -70,11 +70,12 @@ public class leitorDeArquivos{
                          String opcao = escaneador.nextLine();
                          String txt = escaneador.nextLine();
                          int nDoCap = Integer.parseInt(escaneador.nextLine());
-                         if(!(capitulos.containsKey(nDoCap))){
-                            capitulos.put(nDoCap, new capitulo(null, null, null, null));
-                         }
-                         capitulo proxCap = capitulos.get(nDoCap);
-                         escolhasCap[i] = new escolha(txt, opcao, proxCap);
+                         //if(!(capitulos.containsKey(nDoCap))){
+                           // capitulos.put(nDoCap, new capitulo(null, null, null, null));
+                         //}
+
+                         //capitulo proxCap = capitulos.get(nDoCap);
+                         escolhasCap[i] = new escolha(txt, opcao, nDoCap, capitulos);
                        } 
                        capitulos.get(id).setEscolhas(escolhasCap);
                     }
