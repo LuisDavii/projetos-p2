@@ -1,6 +1,4 @@
-import java.util.Scanner;
 import java.util.HashMap;
-
 
 public class App {
         static leitorDeArquivos leitor = new leitorDeArquivos();
@@ -16,12 +14,12 @@ public class App {
                 print("E assim se iniciou a grande era dos piratas.");
 
                 HashMap<String,personagem> personagens = leitor.lerPersonagens("rsc/personagens.txt");
-                HashMap<Integer,capitulo> capitulos = leitor.lerCap("rsc/historiaCap.txt",personagens);
+                HashMap<Integer,capitulo> capitulos = leitor.carregarCap("rsc/historiaCap.txt",personagens);
 
                 capitulos.get(1).executa();
 
         }                                       
         public static void print(String texto) {
-                capitulo.print(texto, 20);
+                capitulo.print(texto, 10);
         }
 }

@@ -5,12 +5,12 @@ Law
 
 PERSONAGEM 
 secundarioB
-Bellamy
+Cap. Bellamy
 100
 
 PERSONAGEM
 secundarioR
-Rumbar
+Cap. Yorki
 100
 
 

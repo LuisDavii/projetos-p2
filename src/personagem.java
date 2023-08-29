@@ -13,7 +13,6 @@ public class personagem {
 
     public void dizBravura() {
         System.out.println(nome + " |  Bravura: " + bravura);
-
     }
 
     public void mudaBravura(int quantidade) {

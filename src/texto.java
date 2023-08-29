@@ -9,6 +9,7 @@ public class texto {
         this.mudaBravura_S = mudaBravura_S;
     }
 
+
     public String getTexto() {
         return this.texto;
     }

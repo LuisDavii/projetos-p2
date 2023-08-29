@@ -6,10 +6,12 @@ titulo
 personagem secundario                    //  se n tiver coloca "n"
 HISTORIA                                 //  p/iniciar a hitoria 
 1                                        //  quantos textos tem 
-texto                                    //  em uma linha só!!!                          |
+inicio_txt                               //  iniciar                                     |
+texto                                    //  texto                                       |
+fim_txt                                  //  fim                                         |
 mudança de energia principal             //  se n tiver é 0                              |
 mudança de energia secundario            //       | |                                    |  
-.										 //  se tiver mais txt é só digitar em sequência |
+.					 //  se tiver mais txt é só digitar em sequência |
 ESCOLHAS                                 //  p/iniciar as escolgas
 nome escolha                             //  oq o usuario vai digitar                    |
 txt das escolhas                         //  txt explicando a escolha                    |
@@ -24,7 +26,14 @@ Capitulo I | A Duvida Incessante
 n
 HISTORIA
 1
-Em um pequeno vilarejo no North Blue, vivia um jovem chamado Law.\nFascinado pelas histórias de piratas, ele sonhava em se juntar a uma\n tripulação audaciosa e explorar os mares. Entretanto após diversas tentativas\n e repetidos fracassos, Law começa a questionar seu sonho de se tornar um pirata.\n Ele  é atormentado por uma série de eventos desanimadores que minam sua\n" confiança e abalam sua determinação
+inicio_txt
+Em um pequeno vilarejo no North Blue, vivia um jovem chamado Law.
+Fascinado pelas histórias de piratas, ele sonhava em se juntar a uma
+tripulação audaciosa e explorar os mares. Entretanto após diversas tentativas
+e repetidos fracassos, Law começa a questionar seu sonho de se tornar um pirata.
+Ele  é atormentado por uma série de eventos desanimadores que minam sua
+confiança e abalam sua determinação
+fim_txt
 0
 0
 ESCOLHAS
@@ -43,7 +52,11 @@ Capitulo II | A Jornada Começa !!
 n
 HISTORIA
 1
-Determinado(a), Law busca uma tripulação que aceite aprendizes em sua\n jornada. Ele se depara com Dois navios ancorados no porto: \nUm navio dos Piratas Rumbar e outro da tripulação dos Piratas Bellamy.
+inicio_txt
+Determinado(a), Law busca uma tripulação que aceite aprendizes em sua
+jornada. Ele se depara com Dois navios ancorados no porto:
+Um navio dos Piratas Rumbar e outro da tripulação dos Piratas Bellamy.
+fim_txt
 0
 0
 ESCOLHAS
@@ -56,18 +69,49 @@ bellamy
 
 -----------------------------------------------------------------------
 
-CAPITULO
+CAPITULO_IMG
 3
 .
 secundarioR
 HISTORIA
 2
-Como um pirata novato, você se junta a uma pequena tripulação dos\n Piratas Rumbar, liderada pelo audacioso Capitão Yorki.\n \nSob a orientação do Capitão Yorki, você aprende os segredos da vida pirata,\n desde a arte da navegação até as habilidades de combate\n \nApós dois anos navegando com a tripulação dos Piratas Rumbar, Law \n conquistou a confiança de seu capitão.
+inicio_txt
+Como um pirata novato, você se junta a uma pequena tripulação dos
+Piratas Rumbar, liderada pelo audacioso Capitão Yorki.
+
+Sob a orientação do Capitão Yorki, você aprende os segredos da vida pirata,
+desde a arte da navegação até as habilidades de combate.
+
+Após dois anos navegando com a tripulação dos Piratas Rumbar, Law
+conquistou a confiança de seu capitão.
+fim_txt
 20
 0
-Seu comprometimento, habilidades e lealdade ao bando eram incontestáveis.\n \nCerto dia enquanto navegavam pela gran line em busca do one piece, os \n Piratas Rumbar se depararam com uma visão aterrorizante: a tripulação do\n temido Vegapunk se aproximava. Eles haviam cruzado o caminho com um\n dos piratas mais perigosos e cruéis dos mares. Durante uma reunião no\n navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta\n \n- Cap. Yorki " LAW!!! Chegou a hora de tomarmos uma decisão.\n \nDiante dessa tempestade , devemos lutar ou fugir e perecer como meros marujos?"\n - Cap. Yorki "Decida Law, qual vai ser?" 
+inicio_txt
+Seu comprometimento, habilidades e lealdade ao bando eram incontestáveis.
+
+Certo dia enquanto navegavam pela gran line em busca do one piece, os
+Piratas Rumbar se depararam com uma visão aterrorizante: a tripulação do
+temido Vegapunk se aproximava. Eles haviam cruzado o caminho com um
+dos piratas mais perigosos e cruéis dos mares. Durante uma reunião no
+navio, o Capitão Yorki olha diretamente nos seus olhos e faz uma pergunta
+
+- Cap. Yorki " LAW!!! Chegou a hora de tomarmos uma decisão.
+
+Diante dessa tempestade , devemos lutar ou fugir e perecer como meros marujos?"
+- Cap. Yorki "Decida Law, qual vai ser?" 
+fim_txt
 0
 0
+         /|\
+       /__| )
+     /____| ))
+   /______| )))
+ /________|  )))
+         _|____))
+ \======| o o /
+~~~~~~~~~~~~~~~~~~~
+fim_img
 ESCOLHAS
 lutar
 | Lutar |
@@ -84,16 +128,59 @@ Capitulo III | Turbulência dos Mares: A Jornada de Law
 secundarioR
 HISTORIA
 4
-- Law "Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos\n Se a luta é necessária para proteger nossa tripulação e nossos objetivos,\n então devemos enfrentá-la sem hesitação. Não fugiremos do combate\n quando a honra e nossa liberdade estiverem em jogo!!"
+inicio_txt
+- Law "Capitão, já enfrentamos muitos inimigos e derramamos sangue juntos
+Se a luta é necessária para proteger nossa tripulação e nossos objetivos,
+então devemos enfrentá-la sem hesitação. Não fugiremos do combate
+quando a honra e nossa liberdade estiverem em jogo!!"
+fim_txt
 20
 20
-Chegou o dia em que o destino da tripulação tomou um rumo trágico.\n Law, estava pronto para provar seu valor no campo de batalha.\n Ao lado do capitão Yorki e dos companheiros de tripulação, ele erguia\n sua espada, ciente dos desafios que estavam por vir.\n \nNessa batalha, o navio foi destruído e muitos membros da tripulação\n perderam a vida. Law, junto com Yorki e alguns outros sobreviventes,\n lutaram com todas as suas forças. O inimigo era implacável, e o número\n de oponentes era avassalador. Mesmo com cada fibra de seu ser gritando\n por vingança,Law percebeu que a morte de seu bando era inevitável.\n \n Com pesar, Law olhou para os olhos de seus companheiros feridos, e a\n tristeza invadiu seu coração.\n \n- Law "Precisamos fugir! Não há mais esperança aqui."
+inicio_txt
+Chegou o dia em que o destino da tripulação tomou um rumo trágico.
+Law, estava pronto para provar seu valor no campo de batalha.
+Ao lado do capitão Yorki e dos companheiros de tripulação, ele erguia
+sua espada, ciente dos desafios que estavam por vir.
+ 
+Nessa batalha, o navio foi destruído e muitos membros da tripulação
+perderam a vida. Law, junto com Yorki e alguns outros sobreviventes,
+lutaram com todas as suas forças. O inimigo era implacável, e o número
+de oponentes era avassalador. Mesmo com cada fibra de seu ser gritando
+por vingança,Law percebeu que a morte de seu bando era inevitável.
+ 
+Com pesar, Law olhou para os olhos de seus companheiros feridos, e a
+tristeza invadiu seu coração.
+ 
+- Law "Precisamos fugir! Não há mais esperança aqui."
+fim_txt
 -30
 0
-\nJuntos, eles correram para o navio destruído, desesperados para escapar\n daquela carnificina. Mas enquanto lutavam para abrir caminho entre os\n inimigos, um por um, Cap Yorki e outros companheiros de Law caíram. Seus gritos de dor\n e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.\n
+inicio_txt
+
+Juntos, eles correram para o navio destruído, desesperados para escapar
+daquela carnificina. Mas enquanto lutavam para abrir caminho entre os
+inimigos, um por um, Cap Yorki e outros companheiros de Law caíram. Seus gritos de dor
+e agonia ecoaram pelos ventos, misturados com o som das lâminas cortantes.
+
+fim_txt
 -60
 -1000
-Finalmente, restava apenas Law. Sua mente estava turva com a dor e a\n perda, mas ele sabia que tinha que sobreviver. Cada celula de seu corpo\n clamava por vingança, mas ele se obrigou a seguir em frente, lutando com\ as últimas gotas de energia que lhe restavam.\n \nCom lágrimas em seus olhos, Law conseguiu escapar daquele pesadelo.\nSozinho, ele passou o resto da sua vida infima vagando pelos mares,\n consumido pela culpa e pela tristeza por ter sido o único a sobreviver.\n \n Law Perdeu 1000 de bravura \n Sua bravura se esgotou.\n Law Não consegirá alcançar o One Piece...\n\n|  F I M  |
+inicio_txt
+Finalmente, restava apenas Law. Sua mente estava turva com a dor e a
+perda, mas ele sabia que tinha que sobreviver. Cada celula de seu corpo
+clamava por vingança, mas ele se obrigou a seguir em frente, lutando com
+as últimas gotas de energia que lhe restavam.
+ 
+Com lágrimas em seus olhos, Law conseguiu escapar daquele pesadelo.
+Sozinho, ele passou o resto da sua vida infima vagando pelos mares,
+consumido pela culpa e pela tristeza por ter sido o único a sobreviver.
+
+Law Perdeu 1000 de bravura
+Sua bravura se esgotou.
+Law Não consegirá alcançar o One Piece...
+
+|  F I M  |
+fim_txt
 0
 0
 
@@ -105,19 +192,74 @@ Capitulo III | Hachinosu Sangue e Tesouros
 secundarioR
 HISTORIA
 5
-Law pensou profundamente, considerando as consequências de enfrentar\n Vegapunk, um dos piratas mais infames e temidos dos mares.\n \n- Law "Capitão, se lutarmos agora, seremos superados em números e completamente\n aniquilados. Vamos recuar, ganhar tempo e fortalecer nossa tripulação.\n nos preparar para enfrentar esse desgraçado e quando estivermos prontos\n ninguém ousará desafiar os Piratas Rumbar novamente!!!
+inicio_txt
+Law pensou profundamente, considerando as consequências de enfrentar
+Vegapunk, um dos piratas mais infames e temidos dos mares.
+
+- Law "Capitão, se lutarmos agora, seremos superados em números e completamente
+aniquilados. Vamos recuar, ganhar tempo e fortalecer nossa tripulação.
+nos preparar para enfrentar esse desgraçado e quando estivermos prontos
+ninguém ousará desafiar os Piratas Rumbar novamente!!!"
+fim_txt
 -20
 -20
-\nApós meses de preparação, os Piratas Rumbar finalmente chegaram à última\n ilha da Grand Line. Era um lugar misterioso e perigoso, conhecido como\n "Hachinosu", Eles estavam determinados a conquistar a fama e a fortuna que\n os aguardavam, mas sabiam que não estavam sozinhos.\n \n navegavando pela costa de Hachinosu, uma densa névoa começou a envolver seus\n navios, reduzindo a visibilidade e criando um ar de suspense. De repente, os\n sons de canhões ecoaram pela neblina, seguidos por explosões.\n A névoa se dissipou rapidamente, revelando os imponentes navios da tripulação do Vegapunk.\n \n Os Piratas Rumbar revidaram, disparando seus próprios canhões em resposta ao ataque.
+inicio_txt
+
+Após meses de preparação, os Piratas Rumbar finalmente chegaram à última
+ilha da Grand Line. Era um lugar misterioso e perigoso, conhecido como
+"Hachinosu", Eles estavam determinados a conquistar a fama e a fortuna que
+os aguardavam, mas sabiam que não estavam sozinhos.
+
+navegavando pela costa de Hachinosu, uma densa névoa começou a envolver seus
+navios, reduzindo a visibilidade e criando um ar de suspense. De repente, os
+sons de canhões ecoaram pela neblina, seguidos por explosões.
+A névoa se dissipou rapidamente, revelando os imponentes navios da tripulação do Vegapunk.
+
+Os Piratas Rumbar revidaram, disparando seus próprios canhões em resposta ao ataque.
+fim_txt
 20
 20
-Enquanto os Piratas Rumbar resistiam bravamente, Yorki tomou uma\n decisão audaciosa. Ele ordenou que a sua frota se aproximassem do inimigo,\n buscando um confronto corpo a corpo. A batalha se intensificou à medida que os navios colidiam\n \n No auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Vegapunk.\n A lâmina afiada Vegapunk atravessou de o corpo de Yorki, cortando seus sonhos e\n esperanças em um instante cruel. Ele caiu de joelhos.
+inicio_txt
+Enquanto os Piratas Rumbar resistiam bravamente, Yorki tomou uma
+decisão audaciosa. Ele ordenou que a sua frota se aproximassem do inimigo,
+buscando um confronto corpo a corpo. A batalha se intensificou à medida que os navios colidiam
+
+No auge da batalha, Yorki se encontrou em um duelo mortal com o próprio Vegapunk.
+A lâmina afiada Vegapunk atravessou de o corpo de Yorki, cortando seus sonhos e
+esperanças em um instante cruel. Ele caiu de joelhos.
+fim_txt
 0
 -1000
-\nEnquanto Law presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de\n seu ser. Com um grito, ele se lançou contra Vegapunk, jurando vingança pelo seu capitão!!
+inicio_txt
+
+Enquanto Law presenciava a morte de seu amado capitão Yorki, a fúria se apoderou de
+seu ser. Com um grito, ele se lançou contra Vegapunk, jurando vingança pelo seu capitão!!
+fim_txt
 40
 0
-\n Golpes brutais eram desferidos. O sangue escorria dos ferimentos, Com a habilidade\n aprimorada pela chama da vingança, Law conseguiu encontrar uma brecha na defesa de\n Vegapunk. Com um golpe poderoso finalmente derrotou o infame capitão.\n \n Ao ver seu líder derrotado, os seguidores de Vegapunk recuaram, deixando Law \n exausto, mas triunfante. Ele caiu de joelhos, olhando para o céu enquanto a chuva\n lavava seu rosto coberto de sangue.\n \nCom o coração pesado pela perda de Yorki, Law jurou honrar a memória de seu capitão\n e conduzir os Piratas Rumbar à grandiosidade. O legado de Yorki viveria através dele\n e de sua determinação.\n \n Enquanto a chuva caía sobre a costa da última ilha, Law se levantou, olhando para o \n horizonte com um olhar de determinação. Ele sabia que ainda havia um tesouro a ser \n conquistado, e os Piratas Rumbar continuariam sua jornada, agora com Law como seu novo capitão.\n \n Law Ganhou 1000 de bravura\n Sua bravura chegou ao Maximo!! \n Conquistou seu sonho !! \n \n|  F I M  |
+inicio_txt
+\n Golpes brutais eram desferidos. O sangue escorria dos ferimentos, Com a habilidade
+aprimorada pela chama da vingança, Law conseguiu encontrar uma brecha na defesa de
+Vegapunk. Com um golpe poderoso finalmente derrotou o infame capitão.
+
+Ao ver seu líder derrotado, os seguidores de Vegapunk recuaram, deixando Law
+exausto, mas triunfante. Ele caiu de joelhos, olhando para o céu enquanto a chuva
+lavava seu rosto coberto de sangue.
+
+Com o coração pesado pela perda de Yorki, Law jurou honrar a memória de seu capitão
+e conduzir os Piratas Rumbar à grandiosidade. O legado de Yorki viveria através dele
+e de sua determinação.
+
+Enquanto a chuva caía sobre a costa da última ilha, Law se levantou, olhando para o
+horizonte com um olhar de determinação. Ele sabia que ainda havia um tesouro a ser
+conquistado, e os Piratas Rumbar continuariam sua jornada, agora com Law como seu novo capitão.
+
+Law Ganhou 1000 de bravura
+Sua bravura chegou ao Maximo!!
+Conquistou seu sonho !!
+
+|  F I M  |
+fim_txt
 0
 0
 
@@ -129,13 +271,48 @@ Capitulo III | Law, da Revolta à Justiça nos Mares
 secundarioB
 HISTORIA
 3
-Atraído pela promessa de poder e fama que o Capitão Bellamy representava, Law se\n juntou à tripulação\n \n Enquanto navegavam pelos mares, Law percebeu que Bellamy tinha uma visão distorcida\n de sucesso, desprezava a ideia de sonhos e ambições, acreditando que o mundo era um \n lugar cruel e que apenas os mais fortes mereciam sucesso.\n
+inicio_txt
+Atraído pela promessa de poder e fama que o Capitão Bellamy representava, Law se
+juntou à tripulação
+
+Enquanto navegavam pelos mares, Law percebeu que Bellamy tinha uma visão distorcida
+de sucesso, desprezava a ideia de sonhos e ambições, acreditando que o mundo era um
+lugar cruel e que apenas os mais fortes mereciam sucesso.
+
+fim_txt
 -20
 0
-\n Certo dia marco e seus companheiros chegaram à ilha Jaya, cruzaram seu caminho com\n Luffy o capitão dos Chapéus de Palha. Bellamy, cheio de arrogância, zombou de Luffy\n e seus sonhos de encontrar o One Piece, desencadeando uma intensa desavença entre os\n dois capitães.\n \n Law, dividido entre lealdade e seus próprios princípios, testemunhou a luta entre Luffy e Bellamy. Luffy,\n com sua força e habilidades de fruta do diabo, derrotou Bellamy, provando que\n sonhos e ambições podem ser poderosas podem impulsionar. A derrota de Bellamy abalou \n profundamente Law, que se viu questionando se o caminho pirata era realmente o que\n ele desejava seguir
+inicio_txt
+
+Certo dia marco e seus companheiros chegaram à ilha Jaya, cruzaram seu caminho com
+Luffy o capitão dos Chapéus de Palha. Bellamy, cheio de arrogância, zombou de Luffy
+e seus sonhos de encontrar o One Piece, desencadeando uma intensa desavença entre os
+dois capitães.
+Law, dividido entre lealdade e seus próprios princípios, testemunhou a luta entre Luffy e Bellamy. Luffy,
+com sua força e habilidades de fruta do diabo, derrotou Bellamy, provando que
+sonhos e ambições podem ser poderosas podem impulsionar. A derrota de Bellamy abalou
+profundamente Law, que se viu questionando se o caminho pirata era realmente o que
+ele desejava seguir
+fim_txt
 -30
 -100
-Após o confronto, Luffy se aproximou de Law com um sorriso sincero. Ele reconheceu\n o potencial e a determinação de Law e ofereceu a ele a oportunidade de se juntar à \n tripulação dos Chapéus de Palha. Law sabia que a vida de pirata trazia aventuras\n emocionantes e liberdade, mas também podia ser marcada pela violência e caos.\n \n Revoltado com a visão deturpada de sucesso e a crueldade demonstrada por piratas\n como Bellamy, Law tomou uma decisão firme e jurou ingressar na Marinha para\n combatê-los. Ele se comprometeu a lutar pela justiça, proteger os inocentes e \n garantir que os mares fossem um lugar seguro para todos.\n\n Law Ganhou 1000 de bravura\n Sua bravura chegou ao Maximo!! \n Conquistou seu sonho !! \n \n |  F I M  |
+inicio_txt
+Após o confronto, Luffy se aproximou de Law com um sorriso sincero. Ele reconheceu
+o potencial e a determinação de Law e ofereceu a ele a oportunidade de se juntar à
+tripulação dos Chapéus de Palha. Law sabia que a vida de pirata trazia aventuras
+emocionantes e liberdade, mas também podia ser marcada pela violência e caos.
+
+Revoltado com a visão deturpada de sucesso e a crueldade demonstrada por piratas
+como Bellamy, Law tomou uma decisão firme e jurou ingressar na Marinha para
+combatê-los. Ele se comprometeu a lutar pela justiça, proteger os inocentes e
+garantir que os mares fossem um lugar seguro para todos.
+
+Law Ganhou 1000 de bravura
+Sua bravura chegou ao Maximo!!
+Conquistou seu sonho !!
+
+|  F I M  |
+fim_txt
 0
 0
 
@@ -147,7 +324,33 @@ Capitulo II | O Adeus ao Mar
 n
 HISTORIA
 1
-Law reúne sua coragem e parte em busca do seu sonho. Ele se junta a uma tripulação\n e juntos, eles embarcam em um pequeno navio rumo ao desconhecido.\n \n Contudo, a vida marítima não é tão romântica como Law imaginava. Enfrentando\n tempestades violentas e encontros com piratas cruéis, a tripulação de Law \n experimenta o lado mais sombrio dos mares\n \n Durante uma batalha contra um poderoso pirata, Law testemunha a perda trágica de \n um membro querido de sua família, que havia embarcado em sua própria jornada como \n pirata. A dor da perda é avassaladora, deixando Law profundamente abalado.\n \n Além disso, Law é capturado e aprisionado pela marinha que caça piratas\n impiedosamente. Durante seu tempo na prisão, ele testemunha a crueldade e a\ brutalidade com que os piratas são tratados, fazendo-o questionar se o caminho\n pirata é realmente digno de seguir.\n \n Essas experiências traumáticas, combinadas com as incertezas e os desafios\n constantes que um pirata enfrenta, levam Law a acreditar que desistir de seu sonho\n é a melhor maneira de proteger aqueles que ama e evitar um destino trágico.\n \n Law Perdeu 100 de bravura \n Sua bravura se esgotou.\n Law Não consegirá alcançar o One Piece... \n \n |  F I M  |
+inicio_txt
+Law reúne sua coragem e parte em busca do seu sonho. Ele se junta a uma tripulação
+e juntos, eles embarcam em um pequeno navio rumo ao desconhecido.
+
+Contudo, a vida marítima não é tão romântica como Law imaginava. Enfrentando
+tempestades violentas e encontros com piratas cruéis, a tripulação de Law
+experimenta o lado mais sombrio dos mares.
+
+Durante uma batalha contra um poderoso pirata, Law testemunha a perda trágica de
+um membro querido de sua família, que havia embarcado em sua própria jornada como
+pirata. A dor da perda é avassaladora, deixando Law profundamente abalado.
+
+Além disso, Law é capturado e aprisionado pela marinha que caça piratas
+impiedosamente. Durante seu tempo na prisão, ele testemunha a crueldade e a
+brutalidade com que os piratas são tratados, fazendo-o questionar se o caminho
+pirata é realmente digno de seguir.
+
+Essas experiências traumáticas, combinadas com as incertezas e os desafios
+constantes que um pirata enfrenta, levam Law a acreditar que desistir de seu sonho
+é a melhor maneira de proteger aqueles que ama e evitar um destino trágico.
+
+Law Perdeu 100 de bravura
+Sua bravura se esgotou.
+Law Não consegirá alcançar o One Piece... 
+
+|  F I M  |
+fim_txt
 0
 0
 
